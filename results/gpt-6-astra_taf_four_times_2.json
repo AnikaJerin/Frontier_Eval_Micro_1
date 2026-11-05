@@ -1,0 +1,139 @@
+{
+  "model": "gpt-6-astra",
+  "task": "taf_four_times",
+  "trial": 2,
+  "utc": "2026-11-05T10:56:59.764035+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Return only one JSON object with exactly the requested keys; numbers must be JSON numbers, null where requested; no prose or Markdown. Numeric tolerance is 0.000001.\nTAF KJFK 051130Z 0512/0618 18010KT P6SM SCT020 BKN060 TEMPO 0513/0516 2SM -RA BKN008 FM051600 24015G25KT P6SM SCT030 TEMPO 0518/0520 3SM -SHRA BKN012 FM060000 30008KT 4SM BR OVC012. For day 05 at 15:59, 16:00, 19:00 and day 06 at 00:00 UTC, return respectively the JSON fields p1559, temp1559, wind1559, p1600, temp1600, wind1600, p1900, temp1900, wind1900, p0000, temp0000, wind0000. p means prevailing ceiling in feet AGL; temp means temporary ceiling in feet AGL; wind means prevailing wind speed in knots. Use null for no ceiling or no applicable temporary group. All intervals start inclusive/end exclusive; FM replaces prevailing state, TEMPO overlays only stated elements.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_0b72b883656f033b016aec610e870087d2ab1da528ad8048de",
+    "object": "response",
+    "created_at": 1793876238,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793876241,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_0b72b883656f033b016aec610fed8487d2a3ad726f40fa488d",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7GERzWx1M4V4hOSV4FhOJCjhuTccGIEIKkqHi4dU9OB53Uu8zHarca7ClhGOuZaNm1-vKTpOaRRSODSGnMltm7s7FQS3kgaT_gj6uVY0ODebsVcRcl20PbpiMKUXy_4jPzUHXAq77o-_pnO67cXz4W70J5uE4cSn9BDI4uyPupgC6CSIUIR_woTg5xiNTJwEL5aUp8xHvN3By85LGFxaEurgg1MyRLlLU4qWNTz4CsupnRl0sMTrKc8KhyQ6-HghcGET91hV99yRguwsEFg1nuBby1kvtetDroP1AoBct_jTSKuom7RuJKKi6prRREPhKUIRqGAjJe9uLc4O2vJoe2pPd28AryRcmKkeYeaTrz1uPnTGbF-DprLz8BO5skAjt0cDkMybdaxY53pbzlDP4FeUV_t3YHMx-8qhphintOugYp_sPu9UyiV42NMj_d7plksDjUe_Y2ZUBnhq57gpwPWX76E5onb_0W5L7ukOTH1uPfq4jxMrZZcLLFiLLxOUNI5tvT_SMidN-xLJo4BpxInER8732nimORMG2-I09BhxsP9pjP8twGoFsooNzPFAGtmOa7rNEsBK84iRViv_yVAYOK-c2q9xrt-wxnFli1ntsjZ4Fy_UP64Pr4r56kebYWgt-VfkjuuZaFuXUyHMi2KhXfvB-RYFogNYUnLJ70Vc9ENlU9ybnIWyyPjXu6oe45zfgzCCPtyWUPK2DFu86_VaPDEqIJsyZrLd2oGvfrJCuW1YiGytaU0hHJotBg967z0xFvWWEvnS4aDXLBAspI8QySLMJ0RzOneRpb9CPbcCffQYFsUnEpkQwJn7N2pCItUqwjHJJjT9qVXmwii6SZY4-JQc5ECPGccQbjtFNCgrbV7HCz0JxJztk86jCwHln0jnntgAEYJFBNbalMQc_twQbJyEJNtGGa-xqTW9t4uGlOfiiIRq9Mt5iHTrV6K9vYcA30EID5cF2MDN4FyAR5HxCaaHw0kZy-nXn5Aldf9DdRV2VKJ-kO3eVUpMKmoKngSABcZtNUSZTie2-xmX2BiOzYMwEqFdX7Yzs_EN_i_61ofTvprpXCYTKRASuwkgPsWugidM7ZhCxn4rXAxx4tq0Oxe6Z2ubq9_ySzA5vxZYJ7N2JumjKDhl93Gt2G6XH64E-YgTW2dzG0_E_OOUg9Z-YbOw7t7qy4GRqyHWHWySPkYxTZzCWGi96NYtYioB8Pv0VyuLSxT4zsz5Gc8Q8CtMTXFV1G8JfPw2b6CsSpvLrXzOEX_Zt4zKazKx7NZ6eKplqnbNsxNm8ruCtlqGrelezZrlSBfuCeBFgjFfrKFlhkFy_1CKa__p-asp9q4eTpG7wJxEpnDZkoGmhi4YrVGslWxK2lFZ5O0YpfEVN-iZn3vdfw8NvMcXi2k7UfruCLCR0GaDtoJEKjvZYQG7jDbAibPhuJt5T1kOB4qZkhUflHO2A6fZ9iIQ43ChwNy-DC-azxrQd1KCoVi9pNC7pL-td3qyTN6ev4iRtSmALNxgonu0Ti-t5-G42Y8oePaeyVB5-E5s2doIxSU4hwOXoW_u6GKJfaVXIfRe89hSdnLTnKK7tBDcYKikvnKUAD8ngZi2hvFmEFf6MhSTB1A0QWbU7uX2Iu211RK1iwIoHD_si0xEnALVoYqyHnty4iHQumCidftchuBWaEy_yENwSldI3HcU641kbCOuKdHN-I56stjk_n6LrHXIp_eSWKzcMH8B8tkgB5Rn71UC_KdqhtO355NM9x-z_d9kiQKYS7cASqn9Scc_fYvJG4magqo0nsOs-sCrhQKUTzn5xnT1FsvrJBC5xBkx2eL_C-ovdkHIyQOquC_tY1jp-AZnqU486LIuw0ApfQeHrDZCcvDSJoMo5UcCcqu3Pzd8HLEGPbycIWY0Npa-Laz-mH7ekUfdgUiYFtL5otm787j5p3C-OAS3cBawHzzwsPaZXkY4mAInEQeMsHcgmw3xRTiwJsazVSG6",
+        "summary": []
+      },
+      {
+        "id": "msg_0b72b883656f033b016aec6110fa8087d2a4424a8b3e05e6f9",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"p1559\":6000,\"temp1559\":800,\"wind1559\":10,\"p1600\":null,\"temp1600\":null,\"wind1600\":15,\"p1900\":null,\"temp1900\":1200,\"wind1900\":15,\"p0000\":1200,\"temp0000\":null,\"wind0000\":8}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 269,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 136,
+      "output_tokens_details": {
+        "reasoning_tokens": 54
+      },
+      "total_tokens": 405
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "status": "completed",
+  "answer": "{\"p1559\":6000,\"temp1559\":800,\"wind1559\":10,\"p1600\":null,\"temp1600\":null,\"wind1600\":15,\"p1900\":null,\"temp1900\":1200,\"wind1900\":15,\"p0000\":1200,\"temp0000\":null,\"wind0000\":8}",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "p1559": true,
+      "temp1559": true,
+      "wind1559": true,
+      "p1600": true,
+      "temp1600": true,
+      "wind1600": true,
+      "p1900": true,
+      "temp1900": true,
+      "wind1900": true,
+      "p0000": true,
+      "temp0000": true,
+      "wind0000": true
+    }
+  },
+  "cost_usd": 0.00949,
+  "runtime_seconds": 3.7842863329860847
+}

@@ -1,0 +1,132 @@
+{
+  "model": "gpt-6-astra",
+  "task": "synop_trend",
+  "trial": 3,
+  "utc": "2026-11-05T10:56:52.070608+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Return only one JSON object with exactly the requested keys; numbers must be JSON numbers, null where requested; no prose or Markdown. Numeric tolerance is 0.000001.\nSYNOP section 1 excerpt: 11025 21048 49987 52018; section 3: 333 10050 21090. The 5appp group indicates pressure rose 1.8 hPa over the preceding three hours. Assume pressure 900\u20131099.9 hPa. Return current_temperature_c, current_dewpoint_c, current_msl_pressure_hpa, msl_pressure_three_hours_ago_hpa, temperature_dewpoint_spread_c. Section 3 is not current conditions.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_0904fdfbf9ad0215016aec610634ac87d29ef7e3dc09dc78cc",
+    "object": "response",
+    "created_at": 1793876230,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793876234,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_0904fdfbf9ad0215016aec6107dcdc87d2b70c8b609612ae9d",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7GEKgEw2j5JdEzHubRZfVb89M_8b2Ve5uxOZ5mqFAvinYknr3TPKJFz4R1XptOJszdn6lrwAFjeK5yuWqpSPcmTvCYaaDSdtMeZr2Pm5voqInMHx8oqapMEt_ODhEnGPB8Y5N76hLpdRXa66wyjDsyYT_JIPOqxZEUKrHA20UdyQYsO_Cul2fGraAsSqwTTh5FIPJ0SfmKPVsXIzfRKQDovYC8O1b28SI0u0h7WRzqkGEDfvvXtRwsDzYPrG_5DiW5YPNWtFZa13e61j_D1MxiLkgCR3TxuYcCs_L3UOU785jDDRdsHEBdqwL9vfz8oAaqvkK-jDmPAhQvBS6FsCJd75oyLArmN0fbvF1sYmEszfOCV2Jt0dayAKeJySJVmWZQoN9QdK7si6A0F0pJkh8KOc-36ayf7a4fHNi8OFImy2PIMwN2wdmsVeQQNQg4imGkELZab_ketOEYhiXeVjA3YmGSAiw2twfLRRsUOYG8Dt9PTy8DjS87ZOwpVXD2XIQa7jySRqVpnEUjwesEUOcn_ImpSvCzi6P7XGVUKwPoIvnI2aYXRJVqAJ9Cqse-vILkjEIx6BDV00AyC8MAnIaMWKuIIsU56DsPVGLZyUzeiIKhmuuvN7kXsTw6T9VEf0bsV1MIB9mpAR6GmEuS4Ks6DeSQiRzILmJXJnhJbbQU8DMxyr-JaS5kJ3krajINFWFRpT8czZ2X-D2wPgQqQRn6WEeo7r6BcskFVjfGxfKJVcvLnZJTN1C-ccswEER51hXELgmP0oBF7QiAjuLn3dtUUZ5HNGYFYm-7JYx31-lHVfbQ8eqhjDxfAyGv9zAQ6xACMvWFYLN0IDhQrFA5smUAv7W0XqNbpWXYBkdVTeESb2y-ApZ7kQjHD7i7alGa2y8sHPjmGXy_J-GGgXS4Lp3O_0Brp_jPR0KyhT8YJKhKufGx1Qgqf_UJfHovfN4CmMy2HhK2GMYe43ZyfJQSJkWTXFeqjqcKmX0kZHl-GnfWfMQ6w5Bto6eFDJCnsp-ckidlFTs9vXnODcrFHbdr3-3wqSnA1ER-Bsggsh3OCtIVAZsUe_psNrvOj4cl94chX_OOv-C4lt43yoxv15WxBoisimfyMTRgwclsQOc06_2cSTXi8XyIcTG4SFElo7IUyLBRHPTaID7Z_-BIlZQNVjtLsPoNQbXWF0bVxZAwgfFGrRDePmOzVtkUNNfVT3KRrgMPsvK3Blr6liAEvQM9AKVqhUh_KWS379I1pYpSUMjQCrVFBGOod_29avP0Rik7rkUHviysI6Gbh2jI_mxOIIhmAt2bnioyPKoRMwOJePGc2eh_5qK4nReBhSl20UTQEma2m1pe0JdLIQHFypfhlb6EZMsbBoBTF3NtAOtSrKfPZ9cc7TikZw6YE28JcSX9FAxi6YdLTfYGiPNGFXG09lys4AE9rPDq7BdU3l8vQe-PWyOrCtt-_8aP2npsaUqxXYNzeEyZQSJRnQBvAB5mpdlZOuDN_VvsHt-ayA7mYAUu-7B4jMb4WF2aHsnEDNeMM2JY19beQN4ZyDIc0XfbtLqhmX9iH5RJVyZ6OJ8A9UzBfPMOBRmQ0CpQXbTORLgjzHABwEcHHJtdJ9LPTTJPucgXYJCjL2R-Y7X2CC4N_7RMKgWRmJIkzzWY62aoRXjYn3LZT_8s3SgHMhQgfOSnTwGTGZITEN6A24TsGSH-_GaLLFcO7TZ6ndvN2675mQc-nH-5ekmxJI6sNDDfLoqAQkQhpNbzL7Gzr6yTXRiDz8tdaXICI_3RWZwombPZQdk5W0JNqohKjoS2vqQRO0RsWZNjrLmYJMcUnN7tFdoQJXlP34kMNziehsCwfHsWnfP1ow-26URaewvf69gE-4tbzb4zpkcSFHhgRw9ApiBAuugFOkGWq1jts2dv3k3ScdNLHLBPXjT8rOVgQOqCFuYRb_B46p1e5bE481yRMnPNBTrUppVgG1dQFZUuiE_dxrRgrQIcJn",
+        "summary": []
+      },
+      {
+        "id": "msg_0904fdfbf9ad0215016aec610973a087d2826500bfe62148c2",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"current_temperature_c\":-2.5,\"current_dewpoint_c\":-4.8,\"current_msl_pressure_hpa\":998.7,\"msl_pressure_three_hours_ago_hpa\":996.9,\"temperature_dewpoint_spread_c\":2.3}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 152,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 128,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 280
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "status": "completed",
+  "answer": "{\"current_temperature_c\":-2.5,\"current_dewpoint_c\":-4.8,\"current_msl_pressure_hpa\":998.7,\"msl_pressure_three_hours_ago_hpa\":996.9,\"temperature_dewpoint_spread_c\":2.3}",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "current_temperature_c": true,
+      "current_dewpoint_c": true,
+      "current_msl_pressure_hpa": true,
+      "msl_pressure_three_hours_ago_hpa": true,
+      "temperature_dewpoint_spread_c": true
+    }
+  },
+  "cost_usd": 0.00792,
+  "runtime_seconds": 4.296209624997573
+}

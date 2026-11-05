@@ -1,0 +1,133 @@
+{
+  "model": "gpt-6-astra",
+  "task": "cross_code",
+  "trial": 1,
+  "utc": "2026-11-05T10:57:07.623562+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Return only one JSON object with exactly the requested keys; numbers must be JSON numbers, null where requested; no prose or Markdown. Numeric tolerance is 0.000001.\nSynthetic simultaneous excerpts: SYNOP section 1: 11008 21012 49987; METAR: 00000KT 0200 FG VV/// M01/M01 Q0998. Assume SYNOP MSL pressure lies in 900\u20131099.9 hPa and is the underlying value from which METAR QNH is rounded down to an integer hPa. Return synop_temperature_c, synop_dewpoint_c, synop_msl_pressure_hpa, metar_qnh_hpa, pressure_consistent (integer 1 if floor(SYNOP pressure) equals QNH, otherwise 0), metar_ceiling_ft_agl (null if unknown).",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_00cc558293c0b516016aec6116983c87d2ae0e7a179a3c6c70",
+    "object": "response",
+    "created_at": 1793876246,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793876249,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_00cc558293c0b516016aec611784b887d2b4559602ca7de9db",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7GEZiwS7n-cNV5CglVR33i0RhOjngxyGehyOxQJ2VcQMlTG51dgChnO5PZMWVeb1CJAKUjTJQMEmtqv9Hmj2MIUwu3pXnt8hVeNBoyIDREheKeoXURsaLhwIXiDJ9ZOof5E7E3W4iMEd0QNoPlg1wAzZm52sb28Gg7rGi0MOkq7jwwGZX1_pXcyPWqKwAATdXZxVQZOwrXwntqu_OQRaW1IhUBpzCaSUFTZVm0wKX16QadY7uLV5Gv1XgeUdbI-PS-F0n8VybhJzgslsR7qLiGg5-y4sB1bUiOylmEV8ez9Ti86GouFZ7ziBUwHIw6vIXnw4Qh1YpBU4ai0b23-QbKmF9FkpPmcKtV0krHr9WyBb3LolDSA2o5-zpfmlwCpxU2GiB36qAlBAZGDZVYsFH0JRgUdIWh7-EX9lbvJ61cHDKyaYg1vevONWZK03akwev6-S7G_3yN96JJBiVq-hBYUqNJf5XaZ1aYOmoekHcDpIvYWnOMuNFntu1dobd-FLQhO9CQsBfmtkFHQLCl_g_dWMSZillJTjEdO2YmVjQG-u_G0J6CA2NuLBBpHcu-LYBKnihlRTfpCBMJye5WVvgA1ijy-BiMoMHvjD5EIVFSetd8HSwp4txBJ2njhBxqYj428K4myFOSZXyOD8YMIvHTDCY6Ja7Xi8_QbhQyrxMOBhQvZJLvsHVl7YmCZt8STz5ZJC6geD4cq4ZgGZgK_ZUmHhWkOkVoZP0g57yeSBeZz-pG9HYeEZ3cbApobjn6JmsugrGZJCd0XBV8CJnwCd6ls576O2-hX1HNAc9Qo1ihIS6AJ_AEHIB10euUlOBR2BnNgG0WEBYBqHm3xDGGp5PJcqPlcAg4X4E1F1YXB3JwVlsHO-L030rA3B9c5NhXUroLPE7j0DoEjAQmowQjElWKhezyAX7xW9huqeieYCTvz867aylURY9leEZOe3hl0t_R7MG9-GIVxKkY0FrcDvzdWFCG9pYVQBGX-rmaWzEa3De4OQ1pE8-MRkMp51LTu8Dj4DoeB6VEBHZic5bZ7DXYFey0nIOdixJwU5d-PF00O1RXbNaR041IbWZJN9R97jUqviV2HQBQ7hgheKdo7Uqjwyr5mX77-cSDy-NB9zinR51C0xK_pBVhTKIb3UwX0CVu-PB5daDkHpBpEVEFfw8810-Cl2kWnUe_1rXNJYWsNRIcwtVIle8-iun5hFtGnibdC3c0hEZjyPftlqxumLcRdx-uSW0I0FpwJPxKOZCt2JbaDNS0iB5pPX2c8JVdBWZyFRZnFtZhF44lHGTaX5Xw86U7lsxop19aUopzhIRYG_BpswniqWIu9Gt1UGNgWo6Zec1uBlXBn8_M-tarzmdoYMCA-PfEjsv29CAQwAM0pJuWJZY2K7nmg-pS7GGdzvIgOnqkj1Mq1X1zworfkp9RLeZRSsrvbbb31pEZn9CSrJJzk6gSxp6blWgMdxSbA1lGePU7HOMnmogOYWYPaOSzUbzHyFuficRzZcRiUCKuXrnaporZ1zFtG7PiF2zpqu0iHXRHY716zuq4SU73_9TFYli0bPRP-IBghj4qNdSCEdbsaUmbNj4vBHjOJ8hWprAHz9mpCSiLSmpnVlwoiVI6YxctFNeDCqbd46-1DbLpWp1iW6DzbUJxPHYMC1uBm08bzaA_gL7NWpJp3Bc68vMGmSlInztj9Lqdc3vBi83-mbm3OLLBt1FJq25HrjaRZdh8XesM8XguQzerMTVaaf8hWtiVGVqv7kobFQomg72yQ6Xs8uXUevTGvCFBrkEvT_uAJIF7mejDH4xfcVljCQKtaIXFR12Ar5vwkPELACKyYHfvpww55RGkmaRAqxw6qRDMt-mAIvK8CMovz0UrYDLlniCmtGTaACYYtAHhOVIzHsLwE=",
+        "summary": []
+      },
+      {
+        "id": "msg_00cc558293c0b516016aec6118ca2087d2b55f21c9302e4a43",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"synop_temperature_c\":-0.8,\"synop_dewpoint_c\":-1.2,\"synop_msl_pressure_hpa\":998.7,\"metar_qnh_hpa\":998,\"pressure_consistent\":1,\"metar_ceiling_ft_agl\":null}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 181,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 119,
+      "output_tokens_details": {
+        "reasoning_tokens": 53
+      },
+      "total_tokens": 300
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "status": "completed",
+  "answer": "{\"synop_temperature_c\":-0.8,\"synop_dewpoint_c\":-1.2,\"synop_msl_pressure_hpa\":998.7,\"metar_qnh_hpa\":998,\"pressure_consistent\":1,\"metar_ceiling_ft_agl\":null}",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "synop_temperature_c": true,
+      "synop_dewpoint_c": true,
+      "synop_msl_pressure_hpa": true,
+      "metar_qnh_hpa": true,
+      "pressure_consistent": true,
+      "metar_ceiling_ft_agl": true
+    }
+  },
+  "cost_usd": 0.00776,
+  "runtime_seconds": 4.466623209009413
+}

@@ -1,0 +1,18 @@
+{
+  "id": "taf_four_times",
+  "model_visible_prompt": "Return only one JSON object with exactly the requested keys; numbers must be JSON numbers, null where requested; no prose or Markdown. Numeric tolerance is 0.000001.\nTAF KJFK 051130Z 0512/0618 18010KT P6SM SCT020 BKN060 TEMPO 0513/0516 2SM -RA BKN008 FM051600 24015G25KT P6SM SCT030 TEMPO 0518/0520 3SM -SHRA BKN012 FM060000 30008KT 4SM BR OVC012. For day 05 at 15:59, 16:00, 19:00 and day 06 at 00:00 UTC, return respectively the JSON fields p1559, temp1559, wind1559, p1600, temp1600, wind1600, p1900, temp1900, wind1900, p0000, temp0000, wind0000. p means prevailing ceiling in feet AGL; temp means temporary ceiling in feet AGL; wind means prevailing wind speed in knots. Use null for no ceiling or no applicable temporary group. All intervals start inclusive/end exclusive; FM replaces prevailing state, TEMPO overlays only stated elements.",
+  "reference": {
+    "p1559": 6000,
+    "temp1559": 800,
+    "wind1559": 10,
+    "p1600": null,
+    "temp1600": null,
+    "wind1600": 15,
+    "p1900": null,
+    "temp1900": 1200,
+    "wind1900": 15,
+    "p0000": 1200,
+    "temp0000": null,
+    "wind0000": 8
+  }
+}

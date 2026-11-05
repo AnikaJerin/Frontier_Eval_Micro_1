@@ -1,0 +1,17 @@
+{
+  "task": "RS05",
+  "model": "gpt-5.4",
+  "trial": 2,
+  "utc": "2026-11-05T15:44:14.754076+00:00",
+  "request": {
+    "model": "gpt-5.4",
+    "input": "Decode the following user-provided SYNOP report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nAAXX 31031 41851 02450 8//00 10238 20220 30122 40186 8852/ 333 20219 59010 70015==\n\nDecode air_temperature_c, dewpoint_c, section3_minimum_temperature_c, pressure_change_24h_hpa and precipitation_24h_mm. Do not infer the minimum temperature period.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "status": "interrupted_response_unknown",
+  "grade": null,
+  "estimated_cost_usd": 0,
+  "estimated_cost_note": "unknown: interrupted request may have incurred charges; 0 placeholder excluded from known-cost sums",
+  "error": "Run interrupted while awaiting response; not retried to avoid duplicate billing"
+}

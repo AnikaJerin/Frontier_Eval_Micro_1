@@ -1,0 +1,151 @@
+{
+  "task": "RS05",
+  "model": "gpt-6-astra",
+  "trial": 3,
+  "utc": "2026-11-05T15:44:36.902095+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Decode the following user-provided SYNOP report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nAAXX 31031 41851 02450 8//00 10238 20220 30122 40186 8852/ 333 20219 59010 70015==\n\nDecode air_temperature_c, dewpoint_c, section3_minimum_temperature_c, pressure_change_24h_hpa and precipitation_24h_mm. Do not infer the minimum temperature period.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_08e6621a073e36c1016aeca478507887d28e558bd5f2144673",
+    "object": "response",
+    "created_at": 1793893496,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793893499,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_08e6621a073e36c1016aeca479d61487d2a7496e89390cf189",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7KR7795dPzGvst7r6zRTwD6iDp_Z0CkvDzeBwrs-RgFxwi5NpiWyKxeHhrlO-dvWOabhP7OM_kjZuhFkG1e-fzlKslznOdOD2xRae4G0jGYg3ZBKTlJE9fJaxyLS2Tqc_O69lpG9JKWOpjRsbyNoarJYGhO3ScvqVAo-gUa9ZbcILNY4CDo5ysTehkb9-bvZiZye4J1mE9abQwIlodAFK4b8NrMlA_YgUtjzex2LlLNmJaohqn0nipY4-vCflfj12QOGcwoD0dWkUmfj5bKXwi7S3QOHFnuURbFmXZELudQfvDmflTf6n4oHcvo6W1oMfN6R8b_mWcOY5xLh7In32DsKlXvHsGsINPrkKk7oUe1LMY0Y25T50363vO7ofevu2rV10spqHc0fTWs-I-WPweqxwOxY0Ha-0MGMvp9Rekd2x65ANny10rg1Yr12zeXyKKzJtTtJHRW1vB2MDYxOwoL6nOLa8DAh9qUOdnYvvkIJ7dyUA51LyFcrFRTvQpVrHiHw8oZLQ8g22gLZ3k4g9L2FJ1w0cXv4IMzEpih_ETIlp3Y2hevfjzeGzq8Y1vXYnW_-n8ZrMrhatythWixgz7MjoGIIepakpY4X9V-9bSw27KUYDqIihM5zNmWmZp9uBS-eRGSJotD-rTs6UYJzVSNoW-4VmVyaUksUGQrGS4kN6hwMX3u1ke03c8jHATXC8SeJ8Z5SWb5kzIfjsr3L_0jsb-NE3NU-ImiFczhHOMcZOY-npOfjGxwiMMp7dvWENz4F2K82gRB-qqHXLNlY2LgBapefcPJlw89TLTtV5Qgj73lIUlwcqgxA2pWDYtOtt146AYoFlw0Dechm6L4fLK3ygtfteuz_90aj816YbzPNZQo6JsqG_7fdYaRyyjmOIHWsXZNQ3BIy-QMyLmc-2TJLAHeGiEAP3kux8nOaZmqWarKFP8i5kMgKOKV06h19F7yphKWyQN4RNYtVV0gxUbDUJPbg8vYN4Ht8eYFypgG0Qh2pVgqPCfcDK7tl4hxzKn3ZLbnDBC3FS7JiOtYetQ2yBMaKB0SxRhtZYgaN8uDkv403Cs51QJfzS-feuP-yWHHWiTtUEWDVct6T4bX5A29shB1MMvXglUBOqlm6X-iLpuKns-SxDgg4lbaVYIKenLJRGMlw-SjsBhIZLUnxDb-Nf8vmsDfLOwhT-s64CrwLZIof7Fyr4lRPh6PM6v5Xu_9K_tnRiJ2PliZr55rkvG3PDYkor2iIfSEDs5cUnV5r20NQP2NzvLpV-OP0LnNueYit9en-b_FTIXmfZdvVV5A82XjFFK6knmz00mDAb_HfrL8bmDhGxmLF84dFsdSFRuQSC2-mvgeUaC7x2r8N2CRWBRlmiSd570TUOJTXiP6W1-gkZyk_ew5AOw9yoEgH0B-I1K_n3tiU119-DfptWyuyjgmXc2deMInPJ4KKdxATyLgJIDM4fefhJo7dopBDMJH-EN2neEwVs7yk_zg2aaavL4Hr4oS01MdrYC7awai1hhBq1-KYdUukLlQbIvJBcx9jYRU10pJYoSAJbjz-h1a3g4UwkYuCIpMQhIj1YjylgnglRdR2GQt7wXmGrKMqKrbaYHEMmgqdktoVyg2Gs6Qr4LpsipBsQSg5yoePmxhhtsgBkmWsk03O1UVBJKqTOox_lWk1bbpwyhDR58VRBpj_JjltUDRk3fcJ1vjjKUSG3ryHIln0MUmNaDB5b-RLlqiRVT0x0501fD0MwPH9T87aZ74S7Wkx2itNFKro1Rb1nNE42dMDTRUAcXVLHlK1X0jY",
+        "summary": []
+      },
+      {
+        "id": "msg_08e6621a073e36c1016aeca47a836887d28a82ac7ebc6d3ac5",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"air_temperature_c\": 23.8,\n  \"dewpoint_c\": 22.0,\n  \"section3_minimum_temperature_c\": 21.9,\n  \"pressure_change_24h_hpa\": -1.0,\n  \"precipitation_24h_mm\": 1.5\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 178,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 114,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 292
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "answer": "{\n  \"air_temperature_c\": 23.8,\n  \"dewpoint_c\": 22.0,\n  \"section3_minimum_temperature_c\": 21.9,\n  \"pressure_change_24h_hpa\": -1.0,\n  \"precipitation_24h_mm\": 1.5\n}",
+  "parsed_json": {
+    "air_temperature_c": 23.8,
+    "dewpoint_c": 22.0,
+    "section3_minimum_temperature_c": 21.9,
+    "pressure_change_24h_hpa": -1.0,
+    "precipitation_24h_mm": 1.5
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "air_temperature_c": true,
+      "dewpoint_c": true,
+      "section3_minimum_temperature_c": true,
+      "pressure_change_24h_hpa": true,
+      "precipitation_24h_mm": true
+    }
+  },
+  "usage": {
+    "input_tokens": 178,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 114,
+    "output_tokens_details": {
+      "reasoning_tokens": 40
+    },
+    "total_tokens": 292
+  },
+  "estimated_cost_usd": 0.00748,
+  "runtime_seconds": 3.1292466250015423
+}

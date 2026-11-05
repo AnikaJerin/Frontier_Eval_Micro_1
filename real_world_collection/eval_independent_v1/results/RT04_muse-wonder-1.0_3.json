@@ -1,0 +1,78 @@
+{
+  "task": "RT04",
+  "model": "muse-wonder-1.0",
+  "trial": 3,
+  "utc": "2026-11-05T15:47:09.521696+00:00",
+  "request": {
+    "model": "muse-wonder-1.0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Decode the following user-provided TAF report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nTAF KJFK 310525Z 3106/0112 33013KT P6SM FEW250 FM010000 32007KT P6SM SKC\n\nReturn wind_before_kt, wind_at_boundary_kt, wind_direction_at_boundary_deg and coded_ceiling_at_boundary_ft_agl at day 31 23:59 and day 01 00:00 UTC. FM is start-inclusive; SKC has no coded numeric ceiling."
+      }
+    ],
+    "reasoning_effort": "minimal",
+    "max_tokens": 2048
+  },
+  "response": {
+    "id": "chatcmpl-01a1ac64-d4d0-7283-8e33-7a27cf7c43d6",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"wind_before_kt\": 13, \"wind_at_boundary_kt\": 7, \"wind_direction_at_boundary_deg\": 320, \"coded_ceiling_at_boundary_ft_agl\": null}",
+          "refusal": null,
+          "role": "assistant"
+        },
+        "logprobs": null
+      }
+    ],
+    "created": 1793893651,
+    "model": "muse-wonder-1.0",
+    "service_tier": "default",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 269,
+      "prompt_tokens": 191,
+      "total_tokens": 460,
+      "completion_tokens_details": {
+        "reasoning_tokens": 219
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 102
+      }
+    }
+  },
+  "answer": "{\"wind_before_kt\": 13, \"wind_at_boundary_kt\": 7, \"wind_direction_at_boundary_deg\": 320, \"coded_ceiling_at_boundary_ft_agl\": null}",
+  "parsed_json": {
+    "wind_before_kt": 13,
+    "wind_at_boundary_kt": 7,
+    "wind_direction_at_boundary_deg": 320,
+    "coded_ceiling_at_boundary_ft_agl": null
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "wind_before_kt": true,
+      "wind_at_boundary_kt": true,
+      "wind_direction_at_boundary_deg": true,
+      "coded_ceiling_at_boundary_ft_agl": true
+    }
+  },
+  "usage": {
+    "completion_tokens": 269,
+    "prompt_tokens": 191,
+    "total_tokens": 460,
+    "completion_tokens_details": {
+      "reasoning_tokens": 219
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 102
+    }
+  },
+  "estimated_cost_usd": 0.0057564,
+  "runtime_seconds": 2.795784707996063
+}

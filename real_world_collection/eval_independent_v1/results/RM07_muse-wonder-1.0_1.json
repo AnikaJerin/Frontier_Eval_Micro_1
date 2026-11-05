@@ -1,0 +1,80 @@
+{
+  "task": "RM07",
+  "model": "muse-wonder-1.0",
+  "trial": 1,
+  "utc": "2026-11-05T15:46:19.701506+00:00",
+  "request": {
+    "model": "muse-wonder-1.0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Decode the following user-provided METAR report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nMETAR VIDP 310100Z VRB02KT 0800 R28/P2000 R27/1800 R29R/1700 R29L/1900 MIFG NSC 18/18 Q1018 NOSIG\n\nReturn wind_direction_deg as null when variable, wind_speed_kt, prevailing_visibility_m, r27_rvr_m and r29r_rvr_m."
+      }
+    ],
+    "reasoning_effort": "minimal",
+    "max_tokens": 2048
+  },
+  "response": {
+    "id": "chatcmpl-01a1ac64-1242-7701-885a-01b5e351aa25",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"wind_direction_deg\": null, \"wind_speed_kt\": 2, \"prevailing_visibility_m\": 800, \"r27_rvr_m\": 1800, \"r29r_rvr_m\": 1700}",
+          "refusal": null,
+          "role": "assistant"
+        },
+        "logprobs": null
+      }
+    ],
+    "created": 1793893601,
+    "model": "muse-wonder-1.0",
+    "service_tier": "default",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 246,
+      "prompt_tokens": 179,
+      "total_tokens": 425,
+      "completion_tokens_details": {
+        "reasoning_tokens": 188
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "answer": "{\"wind_direction_deg\": null, \"wind_speed_kt\": 2, \"prevailing_visibility_m\": 800, \"r27_rvr_m\": 1800, \"r29r_rvr_m\": 1700}",
+  "parsed_json": {
+    "wind_direction_deg": null,
+    "wind_speed_kt": 2,
+    "prevailing_visibility_m": 800,
+    "r27_rvr_m": 1800,
+    "r29r_rvr_m": 1700
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "wind_direction_deg": true,
+      "wind_speed_kt": true,
+      "prevailing_visibility_m": true,
+      "r27_rvr_m": true,
+      "r29r_rvr_m": true
+    }
+  },
+  "usage": {
+    "completion_tokens": 246,
+    "prompt_tokens": 179,
+    "total_tokens": 425,
+    "completion_tokens_details": {
+      "reasoning_tokens": 188
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "estimated_cost_usd": 0.005636,
+  "runtime_seconds": 1.9576173750101589
+}

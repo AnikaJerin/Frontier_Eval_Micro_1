@@ -1,0 +1,78 @@
+{
+  "task": "RT02",
+  "model": "muse-wonder-1.0",
+  "trial": 1,
+  "utc": "2026-11-05T15:46:43.196331+00:00",
+  "request": {
+    "model": "muse-wonder-1.0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Decode the following user-provided TAF report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nTAF VGEG 310500Z 3106/0112 29010KT 5000 HZ FEW018 SCT090 BECMG 3116/3118 04008KT 4000 HZ FEW018 SCT090 TEMPO 3118/3122 18015KT 2500 TSRA SCT012 FEW026CB BKN080 BECMG 0104/0106 28010KT 5000 HZ FEW018 SCT090\n\nAt day 31 19:00 UTC, return prevailing_visibility_m, temporary_visibility_m, temporary_ceiling_ft_agl and temporary_wind_speed_kt. Assume BECMG is complete by its end; TEMPO is start-inclusive/end-exclusive."
+      }
+    ],
+    "reasoning_effort": "minimal",
+    "max_tokens": 2048
+  },
+  "response": {
+    "id": "chatcmpl-01a1ac64-6dce-714a-ab68-1cf03211a11b",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"prevailing_visibility_m\": 4000, \"temporary_visibility_m\": 2500, \"temporary_ceiling_ft_agl\": 8000, \"temporary_wind_speed_kt\": 15}",
+          "refusal": null,
+          "role": "assistant"
+        },
+        "logprobs": null
+      }
+    ],
+    "created": 1793893625,
+    "model": "muse-wonder-1.0",
+    "service_tier": "default",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 273,
+      "prompt_tokens": 250,
+      "total_tokens": 523,
+      "completion_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "answer": "{\"prevailing_visibility_m\": 4000, \"temporary_visibility_m\": 2500, \"temporary_ceiling_ft_agl\": 8000, \"temporary_wind_speed_kt\": 15}",
+  "parsed_json": {
+    "prevailing_visibility_m": 4000,
+    "temporary_visibility_m": 2500,
+    "temporary_ceiling_ft_agl": 8000,
+    "temporary_wind_speed_kt": 15
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "prevailing_visibility_m": true,
+      "temporary_visibility_m": true,
+      "temporary_ceiling_ft_agl": true,
+      "temporary_wind_speed_kt": true
+    }
+  },
+  "usage": {
+    "completion_tokens": 273,
+    "prompt_tokens": 250,
+    "total_tokens": 523,
+    "completion_tokens_details": {
+      "reasoning_tokens": 220
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "estimated_cost_usd": 0.00646,
+  "runtime_seconds": 2.4084127910027746
+}

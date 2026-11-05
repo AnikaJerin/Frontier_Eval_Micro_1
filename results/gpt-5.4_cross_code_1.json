@@ -1,0 +1,126 @@
+{
+  "model": "gpt-5.4",
+  "task": "cross_code",
+  "trial": 1,
+  "utc": "2026-11-05T10:56:31.595921+00:00",
+  "request": {
+    "model": "gpt-5.4",
+    "input": "Return only one JSON object with exactly the requested keys; numbers must be JSON numbers, null where requested; no prose or Markdown. Numeric tolerance is 0.000001.\nSynthetic simultaneous excerpts: SYNOP section 1: 11008 21012 49987; METAR: 00000KT 0200 FG VV/// M01/M01 Q0998. Assume SYNOP MSL pressure lies in 900\u20131099.9 hPa and is the underlying value from which METAR QNH is rounded down to an integer hPa. Return synop_temperature_c, synop_dewpoint_c, synop_msl_pressure_hpa, metar_qnh_hpa, pressure_consistent (integer 1 if floor(SYNOP pressure) equals QNH, otherwise 0), metar_ceiling_ft_agl (null if unknown).",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_05446598dcdb30af016aec60f4531c87d2a56aebd8e9ae0091",
+    "object": "response",
+    "created_at": 1793876212,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793876213,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-2026-03-05",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_05446598dcdb30af016aec60f5191487d2966e0312f6c688a5",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"synop_temperature_c\":-1.0,\"synop_dewpoint_c\":-2.2,\"synop_msl_pressure_hpa\":998.7,\"metar_qnh_hpa\":998,\"pressure_consistent\":1,\"metar_ceiling_ft_agl\":null}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 181,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 64,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 245
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "status": "completed",
+  "answer": "{\"synop_temperature_c\":-1.0,\"synop_dewpoint_c\":-2.2,\"synop_msl_pressure_hpa\":998.7,\"metar_qnh_hpa\":998,\"pressure_consistent\":1,\"metar_ceiling_ft_agl\":null}",
+  "grade": {
+    "passed": false,
+    "score": 0.6666666666666666,
+    "fields": {
+      "synop_temperature_c": false,
+      "synop_dewpoint_c": false,
+      "synop_msl_pressure_hpa": true,
+      "metar_qnh_hpa": true,
+      "pressure_consistent": true,
+      "metar_ceiling_ft_agl": true
+    }
+  },
+  "cost_usd": 0.0014125,
+  "runtime_seconds": 1.7114635840116534
+}

@@ -1,0 +1,132 @@
+{
+  "model": "gpt-6-astra",
+  "task": "synop_trend",
+  "trial": 2,
+  "utc": "2026-11-05T10:56:47.770021+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Return only one JSON object with exactly the requested keys; numbers must be JSON numbers, null where requested; no prose or Markdown. Numeric tolerance is 0.000001.\nSYNOP section 1 excerpt: 11025 21048 49987 52018; section 3: 333 10050 21090. The 5appp group indicates pressure rose 1.8 hPa over the preceding three hours. Assume pressure 900\u20131099.9 hPa. Return current_temperature_c, current_dewpoint_c, current_msl_pressure_hpa, msl_pressure_three_hours_ago_hpa, temperature_dewpoint_spread_c. Section 3 is not current conditions.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_0aa6f525de16f549016aec60ffedd887d296d2309152914ddc",
+    "object": "response",
+    "created_at": 1793876223,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793876229,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_0aa6f525de16f549016aec61022d1887d2934c63ef3dc3cfd2",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7GEFzcit2WCmIkNnu7WlXcE8XF8QuMhaeAjgWNeZ2ytP_i7PoDGoEGhLYTs0uklwOQGp5ifQs8SqDIPtRocxnDdqza4iELZeXpKkwVfYv4aHGO8copo0Bf8xnZuISb-wEnzOaHaVi14GhHFrFr66RExcSboc3Q5SyVShPEJmWB9P883kXqWiganL67IF71iWLZBBahDviwOpBG_lQeaK5BmX_ONekmtaWaAlPJT-iN0HrhebiDsaOqsNLp0_mFLBTAUmjX-xaalAp_BbwRHlAAI7SmC78U1rdu2ROmEqbtkRtFbOrg7-KYZ6u2D_t9QZhy0YNn3axzC0jHvmn7XN-dnH9MU1wJo3dyl5A1GQzRWuiXUuwqew5-6SGf2RuXBw8TAtOTYzKXKremY0fB-JmwJCDIgieWp88NG8ogtPOIZ7jeTTz_av8bcYBZh_CUPWXLwsesxN5MUfflYJJGpf7Vl9tmvJ20l6td89w3KthP-fesVzLUCwFnprA6Cl9UFiePfFfEwt922PLJpXnmqSSJgxC0hQtDb-drNSDwYk1BOYw3ae8ujA7KWgxvb1l_rGD4xWqIJuk-_7pI7FG4_J9oV9Uab4wcXE1ou_-naxXjS1G-_e8FPFvMvMLLsr5JgVpJ-klTgFdEBKFiaHg8NwxeVRGqEqiK5sfHDRPse2jZyVudpbrv___EUN1RbumEzXTYxhl6YSB-i1XFDH5P4GGN-oCjjd7T2iF-MWulQi39b-MPdkRKDxmQzPh2sW9cUSQPcaaVnaUAFP4PrML1pCeOhaeG9PS3RsIda9NWXnpDe60fH9BONpwAsoO3agGg5Bv23AVLb_VPS5PzO9UNShosjcf8SKhbYvdnJ16JAcESV0vXUyqfIKZHjINi0A8mI8S-EEyqwIIkjpg11kd8jS-Gtd5BIGkShQyn7IJAvqZeIcBB-ibxxlpAexDp8VaYtzXpnpCyxzC476xK05IT4tk_TgtpWXYCSHjXwolT9QN4Ff2HBjXtBIUxLisZXEd573X3q4tvr_UeJDqoNNQct7KOjQkP5IS08FsEhU3Z-9HPc3JXEd_halfZyr8LdQXIZSFQcLwbb9C0ulaMkPn361sOOX8AhE4Kz7nllaWZR-xcWiMcvoeWrjXGFSYL1aBwGJJgSmOPhu_Rqz27Xftn-tMqvND_ixDlSlUACPsLeIGqTO2seDCN5-sL0FcND4S94VfgkJnztaXcmVFSE9p9sngbsJPte0PoLyEw4wWdepCgyXPZflCW8CHr0zc08GWnS5htfnm041vNgo8_iJuDvmQo_vgat-7gaBgxrOCi3j-3ie26wVI1142OJ1CPdszOPEMIqAQCzI_HXeFLe1NiZZB29D-RtFk5M88j8ohufm8Edf6QDpWPUznbKXly1CoTbIq6gXn4nEb2j9qrsLffHbaPz1nQkizi-gjD-swsAdXQ2gmFBEpw2Tif4DI2qbzBj3zbicZcAYM9FGkXlZfr-Dec6yzu9cAyfYUGJjFNWsRpxNhnHKLVdmMSulY4L6C6CmXSEFw_IptXjXNzuu78T30dvc9d7phbUsY8qSgeyq3PamCb7CHYiHmUqhL_dwPF9lx05uL8PGOfh38Rs2iTz1-Orx5zUNCCI_3T6EMCaE-6iTcdbWGpcN_dTTw77g8lWGM9iJJ7P09tBVDVXw9-DNDfx0QU-Bfo-MtfgngkVjKVOWcOtkBLh4K60MKUMdZ_wsktqt5wRXdSne0d2GTFZizD80a0besYp0m71PMTGHyLZM2RukqnVSoz4KakXZjehTnRZvbqaGtkdx_vjwAtwJd73MpD2LruTdo-bM7rg7loGFv3vpCUpxnUXFMy3Vig0qOKfPnaY5SYlVYQwbbP7DJPYI78XNIipbKhMGcIG37stxW3YZmdI19LAdtN50C39vmnEPVQhPTqXoyfpVIPoCCLGungagOlb6HzVvrx9nSuk8-VDL-UaUdyw-wj_Eyk9trTUvfZ2YaAA7LherJJHtGFQQztyPFSO20A_QLPU9EiAXUwYVH9GDPk6Qve0L8_wuuHtliZdQMx2fUyshJhnuDCpiIkzT98RxvkJNrBidndmUdxozCgRaAgzaWWH61p8WLY-a-ugFLsbnpNObk18bGQyW6HL-njVbnTtxWKz392UVsTq__P7LcQ9EKw7WL-DK0saG",
+        "summary": []
+      },
+      {
+        "id": "msg_0aa6f525de16f549016aec610526a487d2bab173c596c4c010",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"current_temperature_c\":-2.5,\"current_dewpoint_c\":-4.8,\"current_msl_pressure_hpa\":998.7,\"msl_pressure_three_hours_ago_hpa\":996.9,\"temperature_dewpoint_spread_c\":2.3}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 152,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 153,
+      "output_tokens_details": {
+        "reasoning_tokens": 89
+      },
+      "total_tokens": 305
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "status": "completed",
+  "answer": "{\"current_temperature_c\":-2.5,\"current_dewpoint_c\":-4.8,\"current_msl_pressure_hpa\":998.7,\"msl_pressure_three_hours_ago_hpa\":996.9,\"temperature_dewpoint_spread_c\":2.3}",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "current_temperature_c": true,
+      "current_dewpoint_c": true,
+      "current_msl_pressure_hpa": true,
+      "msl_pressure_three_hours_ago_hpa": true,
+      "temperature_dewpoint_spread_c": true
+    }
+  },
+  "cost_usd": 0.00917,
+  "runtime_seconds": 6.357747417001519
+}

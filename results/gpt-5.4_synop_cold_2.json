@@ -1,0 +1,120 @@
+{
+  "task_id": "synop_cold",
+  "trial": 2,
+  "utc": "2026-11-05T10:36:00.781613+00:00",
+  "request": {
+    "model": "gpt-5.4",
+    "input": "Decode this synthetic meteorological fixture. Return only one JSON object, with exactly the requested keys. Numeric values must be JSON numbers in the requested units; unavailable values must be null. No prose or Markdown. Numeric tolerance is 0.000001.\nAAXX 05121 03772 11560 82510 11025 21048 49987\nDecode section 1 air_temperature_c, dewpoint_c, msl_pressure_hpa. Pressure is within 900\u20131099.9 hPa.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_0b2eca0cb751aa23016aec5c24119c87d28cb4b9269af0583e",
+    "object": "response",
+    "created_at": 1793874980,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793874982,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-2026-03-05",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0b2eca0cb751aa23016aec5c2672e887d283041594acfdcc80",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"air_temperature_c\":-2.5,\"dewpoint_c\":-4.8,\"msl_pressure_hpa\":998.7}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 112,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 33,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 145
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "runtime_seconds": 3.50006195800961,
+  "estimated_cost_usd": 0.000775,
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "air_temperature_c": true,
+      "dewpoint_c": true,
+      "msl_pressure_hpa": true
+    }
+  }
+}

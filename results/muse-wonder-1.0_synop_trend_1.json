@@ -1,0 +1,62 @@
+{
+  "model": "muse-wonder-1.0",
+  "task": "synop_trend",
+  "trial": 1,
+  "utc": "2026-11-05T10:57:20.524689+00:00",
+  "request": {
+    "model": "muse-wonder-1.0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Return only one JSON object with exactly the requested keys; numbers must be JSON numbers, null where requested; no prose or Markdown. Numeric tolerance is 0.000001.\nSYNOP section 1 excerpt: 11025 21048 49987 52018; section 3: 333 10050 21090. The 5appp group indicates pressure rose 1.8 hPa over the preceding three hours. Assume pressure 900\u20131099.9 hPa. Return current_temperature_c, current_dewpoint_c, current_msl_pressure_hpa, msl_pressure_three_hours_ago_hpa, temperature_dewpoint_spread_c. Section 3 is not current conditions."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "minimal"
+  },
+  "response": {
+    "id": "chatcmpl-01a1ab5b-7e7e-70ae-8f20-df8ec145faa1",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"current_temperature_c\": -2.5, \"current_dewpoint_c\": -4.8, \"current_msl_pressure_hpa\": 998.7, \"msl_pressure_three_hours_ago_hpa\": 996.9, \"temperature_dewpoint_spread_c\": 2.3}",
+          "refusal": null,
+          "role": "assistant"
+        },
+        "logprobs": null
+      }
+    ],
+    "created": 1793876262,
+    "model": "muse-wonder-1.0",
+    "service_tier": "default",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 570,
+      "prompt_tokens": 154,
+      "total_tokens": 724,
+      "completion_tokens_details": {
+        "reasoning_tokens": 496
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "status": "completed",
+  "answer": "{\"current_temperature_c\": -2.5, \"current_dewpoint_c\": -4.8, \"current_msl_pressure_hpa\": 998.7, \"msl_pressure_three_hours_ago_hpa\": 996.9, \"temperature_dewpoint_spread_c\": 2.3}",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "current_temperature_c": true,
+      "current_dewpoint_c": true,
+      "current_msl_pressure_hpa": true,
+      "msl_pressure_three_hours_ago_hpa": true,
+      "temperature_dewpoint_spread_c": true
+    }
+  },
+  "cost_usd": 0.012016,
+  "runtime_seconds": 6.895712458004709
+}

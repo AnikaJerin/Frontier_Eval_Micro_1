@@ -1,0 +1,46 @@
+{
+  "models": {
+    "gpt-5.4": {
+      "completed_trials": 3,
+      "passed": 0,
+      "task_success_rate": 0.0,
+      "field_correct": 71,
+      "field_total": 81,
+      "field_accuracy": 0.8765432098765432,
+      "pass3": 0,
+      "cost_usd": 0.013815000000000001,
+      "returned_models": [
+        "gpt-5.4-2026-03-05"
+      ]
+    },
+    "gpt-6-astra": {
+      "completed_trials": 3,
+      "passed": 3,
+      "task_success_rate": 1.0,
+      "field_correct": 81,
+      "field_total": 81,
+      "field_accuracy": 1.0,
+      "pass3": 1,
+      "cost_usd": 0.08064,
+      "returned_models": [
+        "gpt-6-astra"
+      ]
+    },
+    "muse-wonder-1.0": {
+      "completed_trials": 3,
+      "passed": 2,
+      "task_success_rate": 0.6666666666666666,
+      "field_correct": 80,
+      "field_total": 81,
+      "field_accuracy": 0.9876543209876543,
+      "pass3": 0,
+      "cost_usd": 0.10394919999999999,
+      "returned_models": [
+        "muse-wonder-1.0"
+      ]
+    }
+  },
+  "formal_trials": 9,
+  "estimated_returned_cost_usd": 0.19840419999999998,
+  "unknown_billing_note": "A GPT-6 Astra request timed out without a saved response before explicit resume; any associated charges are excluded."
+}

@@ -1,0 +1,127 @@
+{
+  "task_id": "synop_cold",
+  "trial": 2,
+  "utc": "2026-11-05T10:37:51.165785+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Decode this synthetic meteorological fixture. Return only one JSON object, with exactly the requested keys. Numeric values must be JSON numbers in the requested units; unavailable values must be null. No prose or Markdown. Numeric tolerance is 0.000001.\nAAXX 05121 03772 11560 82510 11025 21048 49987\nDecode section 1 air_temperature_c, dewpoint_c, msl_pressure_hpa. Pressure is within 900\u20131099.9 hPa.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_07adf652115f27a3016aec5c92292c87d29a6363d79c397dd1",
+    "object": "response",
+    "created_at": 1793875090,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793875093,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_07adf652115f27a3016aec5c944b7887d2b38cc82ea14c805d",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7FyVD7qlDK0EHjJMShNU81XXXGQ3b2832bsD7NucIoKwmt0AObB54CvLxUZUllB-E5WBBE1cq1-khXmjxHIoCoyZx2N4AYUaDtbQprH4l4GIHr8ktn3jQyrj4g-ETG3A0gmpqDm2JJn3ePA3hSNaFiyX80kA7JPtwIOVNo6sm_7J7_n744fOSJVIgPS2GbhC3tRF22nS-B0dZUcQuw55XSk2fYx3zJ5p_EnhGjRK9ArbVyCPM-IBpAb8C_IyRTCFlP2a6sefJz-BNCjjURTetsVWlSODXhB7jUUUKJczwy6NKdTkCo1ikN2XiIdVyTsgaMQtTS9Mjco5SgHPDxQCY7w0lZnBfzsj6SCHrJzLHexxR7qrLCue-qeSPeVng0nLqGjQ-2M14OFDp01l20g6uoku0V7KpVaLhWinqsg3p5_K60-qIgmbwUcij7-E2l5kL8qWcWp93oFnaCVVlBaqIZWqJy2503NM5mwtJCgmUFnVEUS_qxwi4nuzHr2uKpjzA_w32ODo9gRdPsxPNZtkEEgrf02apoS9TfQfNv97WcNq3JXH4BM4yfeIUOdbrtPEcAFi5GHCRLh3_zDAWS7CnljCeH_Bs0GOJ4-3AVdh95uJ4CPw89qQon3wV_pETOxbLcyTirs1aRgguvV6rxIQAlCjPXWzanjUrtv-_KHOAzpj3upw0Nocm3pVZfxuFh9vTO9a8JkPaeCSTwq0LGbp6RxMf0QRBQ3Q9EG0jqyTb61q_LHn_sY47vlRKBg4boXpijS3UUvgADwbJ73EQ4p6a45LQAAWnLWHodBhQ8vMMYwHYLSb-GEODgWSLueaiGyjc-cG3Jf1Yrp1qiUQAhM55QscpdxyQJ-Bmwgeoi0b6o3xIbWIWQRmBI1r48aY2wM3xoD6TI_933_iInl6341c7Q8ilG-D3sZ_dNv52aobLK2YcOzyPVZpsPwNibuHn1IcLh1WVOz8PwBakWUM4x1pW1Mfki6DctcH_amfIoIQ1Q1hgJ9n5tXgMybFZtRoQDT6XIOwcjMTdsMf9r_fpDKi0iAqxZwtgQrS9mFGzNpFazUOcY61DpLbCVFJTM5Pr6Oo1iuc1a-jkBWpDMOgth80zxXeKzG81AVmvsW0FA1-CvabPEtBjHZMhkX51hEL2T4z4QnXbhWVzx7hgUMbF8bF7HzLmepn3bX1V1vv5Z-WRlnCxAFGm0_W9RmxRA7di_XPoMBrFuxMCDBIW7kAzjpIev6q5tRBdoNaPIM4AEeA5sLtJhDN-ZQ43_m_RA1jwRgBJxcY-jxKdyWfM3Xs5HBxpwZSPxkGqZ5FdTs6plZpZ4k5It9MpiXmgWUbiV1znkAjOyojcCaA647ASO9_0TAnBUCZdVzB7dVzDi11ExKB53QJQ7eCRcQpf8Hh2TfcJPvEQ3ypAdtfR1ac0ryvUNDlwrnEllUNkl3fuimImd8lzkoKY5J1IwgqxtGWSDF-b56xG1DDs2w0uyOGUlVtTwV1YkI4xA6cLHscCIQdqmcntIBvqbvatuLYEuFvK1hOoX93hnazg5t4N6bm29rVE0o5p1IeY_P9E3wd0sn0htoUBH-DwaAnuOy8IuTauX1Vx-E4RiOYXGZm8hNa790R-yauIfSrQZhuPhg1XOPRAYDEzZDCQSIbkN0ZHrfeho4th1Hn4Z71kYQ6pgeDP7WcHAkfJTfpcgloWzf6RXtk_I-dKu1sXh8=",
+        "summary": []
+      },
+      {
+        "id": "msg_07adf652115f27a3016aec5c94eaa887d2ab04b836d9a14bb4",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"air_temperature_c\":-2.5,\"dewpoint_c\":-4.8,\"msl_pressure_hpa\":998.7}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 112,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 67,
+      "output_tokens_details": {
+        "reasoning_tokens": 32
+      },
+      "total_tokens": 179
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "runtime_seconds": 3.5978612920152955,
+  "estimated_cost_usd": 0.00447,
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "air_temperature_c": true,
+      "dewpoint_c": true,
+      "msl_pressure_hpa": true
+    }
+  }
+}

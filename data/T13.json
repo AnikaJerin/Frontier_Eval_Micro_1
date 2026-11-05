@@ -1,0 +1,19 @@
+{
+  "id": "T13",
+  "model_visible_prompt": "Return only one JSON object with exactly the requested keys; numbers must be JSON numbers, null where requested; no prose or Markdown. Numeric tolerance is 0.000001.\nSynoptic analyst: interpret these synthetic SYNOP section-1 excerpts, each sea-level pressure within 900\u20131099.9 hPa: report A: 11025 21048 49987; report B: 10008 21012 40032; report C: 11010 (dewpoint group absent; mean-sea-level pressure group absent). An absent group is unavailable, never zero; do not infer it. For each report return fields a_temp_c, a_dew_c, a_msl_hpa, a_spread_c, b_temp_c, b_dew_c, b_msl_hpa, b_spread_c, c_temp_c, c_dew_c, c_msl_hpa, c_spread_c. Spread is temperature minus dewpoint, null if either is unavailable. Also return b_minus_a_msl_hpa.",
+  "reference": {
+    "a_temp_c": -2.5,
+    "a_dew_c": -4.8,
+    "a_msl_hpa": 998.7,
+    "a_spread_c": 2.3,
+    "b_temp_c": 0.8,
+    "b_dew_c": -1.2,
+    "b_msl_hpa": 1003.2,
+    "b_spread_c": 2,
+    "c_temp_c": -1,
+    "c_dew_c": null,
+    "c_msl_hpa": null,
+    "c_spread_c": null,
+    "b_minus_a_msl_hpa": 4.5
+  }
+}

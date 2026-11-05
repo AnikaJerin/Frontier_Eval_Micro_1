@@ -1,0 +1,19 @@
+Decode the following land-station SYNOP report. Return exactly one JSON object, no prose or Markdown, with the 27 keys listed below and no others. Use JSON numbers for numeric values and JSON null for missing or unavailable values; do not use strings, booleans, arrays, estimates for missing values, or zero as a substitute for missing data. Numeric absolute tolerance is 0.000001 in the requested units. For fields ending `_present`, use integer 1 if a 6RRRtR group is actually present in the specified section, otherwise integer 0, regardless of what the precipitation indicator says.
+
+Use FM 12 section scope; section 1 runs from the station number to before 333, section 3 starts after 333. For this controlled decoding exercise, use the explicit bounds 950.0–1050.0 hPa to reconstruct station and sea-level pressures, and interpret the section-1 group beginning 4 as sea-level pressure. These are task constraints to resolve otherwise missing station/pressure context, not verified measurements. For coded cloud-base range return the inclusive lower bound and exclusive upper bound, in metres. For cloud type and weather fields return the original numeric code figure, not a verbal classification. Keep wind direction null if not coded. For section 3 pressure change, retain its signed change in hPa over 24 hours and report the group 7 amount in mm over 24 hours. Section 3 minimum temperature is the temperature value; do not infer its period.
+
+Required keys:
+- observation_day, observation_hour_utc, station_number: integer values.
+- precipitation_indicator, weather_station_indicator: integer code figures.
+- cloud_base_min_m, cloud_base_max_exclusive_m, visibility_km: numbers.
+- total_cloud_oktas: integer; wind_direction_deg: number or null; wind_speed_mps: number.
+- air_temperature_c, dewpoint_c, station_pressure_hpa, msl_pressure_hpa: numbers.
+- present_weather_code, past_weather_1_code, past_weather_2_code: integers.
+- low_cloud_amount_oktas, low_cloud_type_code, medium_cloud_type_code: integers; high_cloud_type_code: integer or null.
+- minimum_temperature_c, pressure_change_24h_hpa, precipitation_24h_mm: numbers.
+- six_group_section1_present, six_group_section3_present: integers 0 or 1.
+
+202610310300 0-20000-0-41850 41850
+AAXX 31031 41850 01450 8//00 10222 20210
+30087 40188 70522 8852/
+333 20213 59008 70020==

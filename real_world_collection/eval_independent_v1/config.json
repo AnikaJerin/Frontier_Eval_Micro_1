@@ -1,0 +1,39 @@
+{
+  "selection_sha256": "bbea07394e00687bc83844e7bfd4a168d64e8111c76770f4f29bd0b39fb68cf3",
+  "decoding_freeze_sha256": "f3163ecf0ab624ee5886509e50c4e3c4cfeca9b8ea36f7326170c83d4d2b5c06",
+  "exploratory_freeze_sha256": "072807ce119f17df8dbe5af0179290deb44a47eedd637ab74eabd4e962ad5f82",
+  "model_settings": {
+    "gpt-5.4": {
+      "provider": "openai",
+      "max_output_tokens": 2048
+    },
+    "gpt-6-astra": {
+      "provider": "openai",
+      "max_output_tokens": 2048
+    },
+    "muse-wonder-1.0": {
+      "provider": "meta",
+      "max_output_tokens": 2048,
+      "reasoning_effort": "minimal"
+    }
+  },
+  "trials": 3,
+  "pricing_note": "Prior run assumed per million USD; estimates only, actual billing may differ",
+  "rates_usd_per_million": {
+    "gpt-5.4": [
+      2.5,
+      15,
+      0.25
+    ],
+    "gpt-6-astra": [
+      10,
+      50,
+      1
+    ],
+    "muse-wonder-1.0": [
+      4,
+      20,
+      0.2
+    ]
+  }
+}

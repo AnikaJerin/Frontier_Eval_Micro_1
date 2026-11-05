@@ -1,0 +1,187 @@
+{
+  "model": "gpt-5.4",
+  "trial": 3,
+  "utc": "2026-11-05T11:56:44.230908+00:00",
+  "request": {
+    "model": "gpt-5.4",
+    "input": "Decode the following land-station SYNOP report. Return exactly one JSON object, no prose or Markdown, with the 27 keys listed below and no others. Use JSON numbers for numeric values and JSON null for missing or unavailable values; do not use strings, booleans, arrays, estimates for missing values, or zero as a substitute for missing data. Numeric absolute tolerance is 0.000001 in the requested units. For fields ending `_present`, use integer 1 if a 6RRRtR group is actually present in the specified section, otherwise integer 0, regardless of what the precipitation indicator says.\n\nUse FM 12 section scope; section 1 runs from the station number to before 333, section 3 starts after 333. For this controlled decoding exercise, use the explicit bounds 950.0\u20131050.0 hPa to reconstruct station and sea-level pressures, and interpret the section-1 group beginning 4 as sea-level pressure. These are task constraints to resolve otherwise missing station/pressure context, not verified measurements. For coded cloud-base range return the inclusive lower bound and exclusive upper bound, in metres. For cloud type and weather fields return the original numeric code figure, not a verbal classification. Keep wind direction null if not coded. For section 3 pressure change, retain its signed change in hPa over 24 hours and report the group 7 amount in mm over 24 hours. Section 3 minimum temperature is the temperature value; do not infer its period.\n\nRequired keys:\n- observation_day, observation_hour_utc, station_number: integer values.\n- precipitation_indicator, weather_station_indicator: integer code figures.\n- cloud_base_min_m, cloud_base_max_exclusive_m, visibility_km: numbers.\n- total_cloud_oktas: integer; wind_direction_deg: number or null; wind_speed_mps: number.\n- air_temperature_c, dewpoint_c, station_pressure_hpa, msl_pressure_hpa: numbers.\n- present_weather_code, past_weather_1_code, past_weather_2_code: integers.\n- low_cloud_amount_oktas, low_cloud_type_code, medium_cloud_type_code: integers; high_cloud_type_code: integer or null.\n- minimum_temperature_c, pressure_change_24h_hpa, precipitation_24h_mm: numbers.\n- six_group_section1_present, six_group_section3_present: integers 0 or 1.\n\n202610310300 0-20000-0-41850 41850\nAAXX 31031 41850 01450 8//00 10222 20210\n30087 40188 70522 8852/\n333 20213 59008 70020==\n",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_064a56f7bd94054f016aec6f0f30ac87d2b9c8990044e6539a",
+    "object": "response",
+    "created_at": 1793879823,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793879826,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-2026-03-05",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_064a56f7bd94054f016aec6f0fdaa887d29cb6692c2cef6b6b",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"observation_day\":31,\"observation_hour_utc\":3,\"station_number\":41850,\"precipitation_indicator\":0,\"weather_station_indicator\":1,\"cloud_base_min_m\":1500,\"cloud_base_max_exclusive_m\":2000,\"visibility_km\":50,\"total_cloud_oktas\":8,\"wind_direction_deg\":null,\"wind_speed_mps\":0,\"air_temperature_c\":22.2,\"dewpoint_c\":21,\"station_pressure_hpa\":1008.7,\"msl_pressure_hpa\":1018.8,\"present_weather_code\":5,\"past_weather_1_code\":2,\"past_weather_2_code\":2,\"low_cloud_amount_oktas\":8,\"low_cloud_type_code\":5,\"medium_cloud_type_code\":2,\"high_cloud_type_code\":null,\"minimum_temperature_c\":21.3,\"pressure_change_24h_hpa\":-0.8,\"precipitation_24h_mm\":2,\"six_group_section1_present\":0,\"six_group_section3_present\":0}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 558,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 215,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 773
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "status": "completed",
+  "answer": "{\"observation_day\":31,\"observation_hour_utc\":3,\"station_number\":41850,\"precipitation_indicator\":0,\"weather_station_indicator\":1,\"cloud_base_min_m\":1500,\"cloud_base_max_exclusive_m\":2000,\"visibility_km\":50,\"total_cloud_oktas\":8,\"wind_direction_deg\":null,\"wind_speed_mps\":0,\"air_temperature_c\":22.2,\"dewpoint_c\":21,\"station_pressure_hpa\":1008.7,\"msl_pressure_hpa\":1018.8,\"present_weather_code\":5,\"past_weather_1_code\":2,\"past_weather_2_code\":2,\"low_cloud_amount_oktas\":8,\"low_cloud_type_code\":5,\"medium_cloud_type_code\":2,\"high_cloud_type_code\":null,\"minimum_temperature_c\":21.3,\"pressure_change_24h_hpa\":-0.8,\"precipitation_24h_mm\":2,\"six_group_section1_present\":0,\"six_group_section3_present\":0}",
+  "parsed_json": {
+    "observation_day": 31,
+    "observation_hour_utc": 3,
+    "station_number": 41850,
+    "precipitation_indicator": 0,
+    "weather_station_indicator": 1,
+    "cloud_base_min_m": 1500,
+    "cloud_base_max_exclusive_m": 2000,
+    "visibility_km": 50,
+    "total_cloud_oktas": 8,
+    "wind_direction_deg": null,
+    "wind_speed_mps": 0,
+    "air_temperature_c": 22.2,
+    "dewpoint_c": 21,
+    "station_pressure_hpa": 1008.7,
+    "msl_pressure_hpa": 1018.8,
+    "present_weather_code": 5,
+    "past_weather_1_code": 2,
+    "past_weather_2_code": 2,
+    "low_cloud_amount_oktas": 8,
+    "low_cloud_type_code": 5,
+    "medium_cloud_type_code": 2,
+    "high_cloud_type_code": null,
+    "minimum_temperature_c": 21.3,
+    "pressure_change_24h_hpa": -0.8,
+    "precipitation_24h_mm": 2,
+    "six_group_section1_present": 0,
+    "six_group_section3_present": 0
+  },
+  "grade": {
+    "passed": false,
+    "score": 0.8888888888888888,
+    "fields": {
+      "observation_day": true,
+      "observation_hour_utc": true,
+      "station_number": true,
+      "precipitation_indicator": true,
+      "weather_station_indicator": true,
+      "cloud_base_min_m": false,
+      "cloud_base_max_exclusive_m": false,
+      "visibility_km": false,
+      "total_cloud_oktas": true,
+      "wind_direction_deg": true,
+      "wind_speed_mps": true,
+      "air_temperature_c": true,
+      "dewpoint_c": true,
+      "station_pressure_hpa": true,
+      "msl_pressure_hpa": true,
+      "present_weather_code": true,
+      "past_weather_1_code": true,
+      "past_weather_2_code": true,
+      "low_cloud_amount_oktas": true,
+      "low_cloud_type_code": true,
+      "medium_cloud_type_code": true,
+      "high_cloud_type_code": true,
+      "minimum_temperature_c": true,
+      "pressure_change_24h_hpa": true,
+      "precipitation_24h_mm": true,
+      "six_group_section1_present": true,
+      "six_group_section3_present": true
+    }
+  },
+  "usage": {
+    "input_tokens": 558,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 215,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 773
+  },
+  "cost_usd": 0.00462,
+  "runtime_seconds": 3.6387642920017242
+}

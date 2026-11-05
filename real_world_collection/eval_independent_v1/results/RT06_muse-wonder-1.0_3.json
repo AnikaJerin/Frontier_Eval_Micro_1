@@ -1,0 +1,82 @@
+{
+  "task": "RT06",
+  "model": "muse-wonder-1.0",
+  "trial": 3,
+  "utc": "2026-11-05T15:47:35.126741+00:00",
+  "request": {
+    "model": "muse-wonder-1.0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Decode the following user-provided TAF report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nTAF EGLL 310459Z 3106/0112 10005KT 6000 SCT005 TEMPO 3106/3110 1500 BR PRFG BKN002 PROB40 3106/3109 0300 FG VV/// BECMG 3109/3111 9999 BECMG 3121/3124 5000 HZ TEMPO 0100/0103 2000 MIFG BR BKN002 PROB30 0101/0103 0300 FG VV/// BECMG 0103/0106 0300 FG VV/// BECMG 0109/0112 9999 NSW FEW010\n\nAt day 31 07:00 UTC return prevailing_visibility_m, tempo_visibility_m, tempo_ceiling_ft_agl, probability_percent, probability_visibility_m and probability_vertical_visibility_ft. VV/// is unavailable, not zero."
+      }
+    ],
+    "reasoning_effort": "minimal",
+    "max_tokens": 2048
+  },
+  "response": {
+    "id": "chatcmpl-01a1ac65-36dc-7224-a080-36a7665db93c",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"prevailing_visibility_m\": 6000, \"tempo_visibility_m\": 1500, \"tempo_ceiling_ft_agl\": 200, \"probability_percent\": 40, \"probability_visibility_m\": 300, \"probability_vertical_visibility_ft\": null}",
+          "refusal": null,
+          "role": "assistant"
+        },
+        "logprobs": null
+      }
+    ],
+    "created": 1793893676,
+    "model": "muse-wonder-1.0",
+    "service_tier": "default",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 221,
+      "prompt_tokens": 288,
+      "total_tokens": 509,
+      "completion_tokens_details": {
+        "reasoning_tokens": 155
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 230
+      }
+    }
+  },
+  "answer": "{\"prevailing_visibility_m\": 6000, \"tempo_visibility_m\": 1500, \"tempo_ceiling_ft_agl\": 200, \"probability_percent\": 40, \"probability_visibility_m\": 300, \"probability_vertical_visibility_ft\": null}",
+  "parsed_json": {
+    "prevailing_visibility_m": 6000,
+    "tempo_visibility_m": 1500,
+    "tempo_ceiling_ft_agl": 200,
+    "probability_percent": 40,
+    "probability_visibility_m": 300,
+    "probability_vertical_visibility_ft": null
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "prevailing_visibility_m": true,
+      "tempo_visibility_m": true,
+      "tempo_ceiling_ft_agl": true,
+      "probability_percent": true,
+      "probability_visibility_m": true,
+      "probability_vertical_visibility_ft": true
+    }
+  },
+  "usage": {
+    "completion_tokens": 221,
+    "prompt_tokens": 288,
+    "total_tokens": 509,
+    "completion_tokens_details": {
+      "reasoning_tokens": 155
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 230
+    }
+  },
+  "estimated_cost_usd": 0.004698,
+  "runtime_seconds": 2.6910565409925766
+}

@@ -1,0 +1,148 @@
+{
+  "task": "RM01",
+  "model": "gpt-6-astra",
+  "trial": 1,
+  "utc": "2026-11-05T15:45:27.932228+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Decode the following user-provided METAR report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nMETAR VGHS 310500Z 31003KT 3200 HZ SCT012 FEW025CB BKN100 30/23 Q1017 TEMPO TSRA\n\nDecode visibility_m, wind_direction_deg, wind_speed_kt, ceiling_ft_agl, temperature_c, dewpoint_c and qnh_hpa. Ceiling is the lowest coded BKN/OVC layer; ignore trend groups.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_0f956812e489b33d016aeca4ac48b487d2acf9e9ef5ea9c39b",
+    "object": "response",
+    "created_at": 1793893548,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793893550,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0f956812e489b33d016aeca4ad6ed887d2944df5f68e787bbd",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"visibility_m\":3200,\"wind_direction_deg\":310,\"wind_speed_kt\":3,\"ceiling_ft_agl\":10000,\"temperature_c\":30,\"dewpoint_c\":23,\"qnh_hpa\":1017}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 179,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 52,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 231
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "answer": "{\"visibility_m\":3200,\"wind_direction_deg\":310,\"wind_speed_kt\":3,\"ceiling_ft_agl\":10000,\"temperature_c\":30,\"dewpoint_c\":23,\"qnh_hpa\":1017}",
+  "parsed_json": {
+    "visibility_m": 3200,
+    "wind_direction_deg": 310,
+    "wind_speed_kt": 3,
+    "ceiling_ft_agl": 10000,
+    "temperature_c": 30,
+    "dewpoint_c": 23,
+    "qnh_hpa": 1017
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "visibility_m": true,
+      "wind_direction_deg": true,
+      "wind_speed_kt": true,
+      "ceiling_ft_agl": true,
+      "temperature_c": true,
+      "dewpoint_c": true,
+      "qnh_hpa": true
+    }
+  },
+  "usage": {
+    "input_tokens": 179,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 52,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 231
+  },
+  "estimated_cost_usd": 0.00439,
+  "runtime_seconds": 2.592710833007004
+}

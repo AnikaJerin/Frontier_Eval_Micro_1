@@ -1,0 +1,11 @@
+{
+  "status": "selected prospectively before inference",
+  "selection_method": "Choose one task per distinct primary decoding challenge with distinct report IDs; include E tasks separately subject to user decision on E01/E02 shared report.",
+  "decoding_task_ids": ["RS03", "RS05", "RS08", "RM01", "RM05", "RM07", "RT02", "RT04", "RT06"],
+  "exploratory_task_ids": ["E01", "E02", "E03"],
+  "repetitiveness": "24 decoding tasks use unique reports but several test similar skills on nearby observations; 9 selected to reduce conceptual overlap. E01/E02 reuse one METAR and are reported separately. Independent report IDs do not imply statistical independence.",
+  "trials_per_task_per_model": 3,
+  "max_output_tokens": 2048,
+  "approximate_estimated_cost_cap_usd": 1.5,
+  "uncertainty": "Sample is too small and non-random to claim general accuracy. The historical exploratory context means it is not a fully blinded holdout."
+}

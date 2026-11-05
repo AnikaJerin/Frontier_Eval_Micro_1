@@ -1,0 +1,194 @@
+{
+  "model": "gpt-6-astra",
+  "trial": 1,
+  "utc": "2026-11-05T11:56:54.528247+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Decode the following land-station SYNOP report. Return exactly one JSON object, no prose or Markdown, with the 27 keys listed below and no others. Use JSON numbers for numeric values and JSON null for missing or unavailable values; do not use strings, booleans, arrays, estimates for missing values, or zero as a substitute for missing data. Numeric absolute tolerance is 0.000001 in the requested units. For fields ending `_present`, use integer 1 if a 6RRRtR group is actually present in the specified section, otherwise integer 0, regardless of what the precipitation indicator says.\n\nUse FM 12 section scope; section 1 runs from the station number to before 333, section 3 starts after 333. For this controlled decoding exercise, use the explicit bounds 950.0\u20131050.0 hPa to reconstruct station and sea-level pressures, and interpret the section-1 group beginning 4 as sea-level pressure. These are task constraints to resolve otherwise missing station/pressure context, not verified measurements. For coded cloud-base range return the inclusive lower bound and exclusive upper bound, in metres. For cloud type and weather fields return the original numeric code figure, not a verbal classification. Keep wind direction null if not coded. For section 3 pressure change, retain its signed change in hPa over 24 hours and report the group 7 amount in mm over 24 hours. Section 3 minimum temperature is the temperature value; do not infer its period.\n\nRequired keys:\n- observation_day, observation_hour_utc, station_number: integer values.\n- precipitation_indicator, weather_station_indicator: integer code figures.\n- cloud_base_min_m, cloud_base_max_exclusive_m, visibility_km: numbers.\n- total_cloud_oktas: integer; wind_direction_deg: number or null; wind_speed_mps: number.\n- air_temperature_c, dewpoint_c, station_pressure_hpa, msl_pressure_hpa: numbers.\n- present_weather_code, past_weather_1_code, past_weather_2_code: integers.\n- low_cloud_amount_oktas, low_cloud_type_code, medium_cloud_type_code: integers; high_cloud_type_code: integer or null.\n- minimum_temperature_c, pressure_change_24h_hpa, precipitation_24h_mm: numbers.\n- six_group_section1_present, six_group_section3_present: integers 0 or 1.\n\n202610310300 0-20000-0-41850 41850\nAAXX 31031 41850 01450 8//00 10222 20210\n30087 40188 70522 8852/\n333 20213 59008 70020==\n",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_02ac49a2d628ccb9016aec6f12c78487d2824e133d430876aa",
+    "object": "response",
+    "created_at": 1793879826,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793879836,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_02ac49a2d628ccb9016aec6f14292c87d28d6644ecf582acd7",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7G8cPSLovQ3vylRXzNGH-ZVbydWVGx6BKccrhnzwtJPRjCnClnXKsV52Fh_mwuzHA9IaVQuLBwAYuBCxJ0bneXeE-vP7A0dZ531GpqUkIHwB_PhWVzsQ7zUaofELrjT1SNQP17V0R3y7PzQVsJMcYU5HCOUTX9tc5buxY1QzsifXtyDENotn0NbpE1duF5AUuEzIiRrFgeFijjSUbYNQtxNgQ3FXrlTLvP60TdUheJS9Sm7dHex7f4Z7jnOxz36rylVsiGInvZrWaq0i1R6bLGYvLDjcH-JhVs2q7affXq-cZrerKI3PAeSwQdFWBx2cJ9Y4kyFtl7eAVBjI6mcpGX5sduN5GGjTZ4T28iVP2g7FkqweyQoDtJvcRo7E1Jhf9ikg0vsrftU2im-0qjiUYr42C2o-GVDXln4FIuxTwlESYqLBwhC8xlVUUjQYVaF3yh3YLoFe0MoJIyzfOya-Q_we8hYvItNmLHT7CdkGTZxLh7ypOAbs1k4DMVoOhv2pnk2AAfYyfjjXpIVwq10hBtcmZUnCzl06RRI82gth2hWyog0e0xc_aeKvGsYRlglN0AS295j2kbVL93VKATTetXGuU1RKdc3V_EsiN_iT3OF-bF2i6F1k_OfonnLZWpqRzRlmrWATvLrBfMTfTI3szYWz3mUFtzrceSPchlEaJ2zX8w2NDK3P6Pzd6UGq5t4G9jvpdoo-m7ZZenbvpTbWgR6K4I6ehfwyPz5LxODImdq3bQ-rzQRXlJItcnbHcRweFcX6oecVJcckiCFmbi1c_ZvOIwWXQLal8O8n3hTW-GFdKSE0Fo6oylvhkjc_Ho_1eqFv5wouHB0uMia1_irKFl9XsJFiHRFExvqRHiqrAKWKP7dZeEq1_jhpd-JiJSwcHLRBIy9hqiw1DeXmsiefpeZpQx7q_ktLwZFyVVZSKWud3OSxyjlMDAWPtJ4JhwuFCz7HUdaJlBMxixmHCOSgSy1we_Wz2ayTUwR1Rl8ApbAZNUYd3AMOwcC1LXfj2k8JqHBKFBsXFInRpRDMZf4RoKBpwcLhuC9mi61LG-In4J5FGtip7IN8C7TukcmPsganhuIwToJyaW0GlnDiJU50oRX2GHmo9iSJatoJv6wM9CTdhrvTQpQ3bDenpswIKNhxQaxWch8WHkuqOQUf6y-nfBFR1psIrpFf0PeHX5HCJt7ssemuqTAbUiP5ijmeMPeDpCRhgCDsJrfQUvVT6c9qaKvwEP_VXrT77llHcD2Nedq95MFATTph0G7T2fZE2F3uTnhzDV-PvrufAyaYHe-0BBIOAEZIfIMbYYJDk9A_x6vSqlnMChk9ds9F_3KOJizfOyc9iZyf_RoDoj5hIyvGNTID3ftX7zUSLw9wOx7j87AJEBEeupZ4GUQDXJ1vvXLnYTo9AA_Nf41nu0e-ZY8-NVSHqXmd92WfCS9cWFkDm2L7N6v8nNbXx_21TrWhV1Lz9VXbHeI6-8Y5bAuKFVLgpYMTbPy73Wk1QAeJc3BArJWH7a8UKM3vXqQPW-Ay67IWLW3ze5H80ambBQsZNLu_rcYZKQMgVzewsiy7XF4Bf4Mvw_JWUmA-T3xHNfc5iXiPeSxvrPPlP_-E95Yd8q50Mq8AdcJwCRmIEH6RMSZf7vQARWFhFbz2Rm0ZSUhBlP50eN0O1hkNSRw0-6EZ5HinkRtRD5cRyW8c-kcKxgFC4G-UHbn7AfUvfeShwfkbXpko-WP2t_rXQJ-KqgyEukVKnu9NDbZDSINfD62p1JoBkd8lE-kKiMmCgqgFuz4PKZlbIGi-62dlptNeCz4vlbgNUGf3wT9KjLStW7Qro13ocpVUVCBuSO3aC7nksMT3z1y0iE5ODYNcRFr9AQM0Wb1JyS1Oi5RHa7gkwjRuXsg49pSfG06SvuoKp0gEM2c1FZYbUPkb1hwcuM-qRBKaygyVUdg611B9XLz9VMuHL-hXijZyG4mg10E6vzNmnN7BlvvQAT8hQnlqL5o_JCWEFPC37HBZsRi11bMiQmPO9o_A48Hy9axM_nUceOcJqiA9xlCVK9DDYt-F5wd3oEMzGLdGd4Mx0BbKBvSfdrHkuHB3LrsXnoORvGwu2JMPKA9r-f32ZFCXHIT6CyTIggEqWrnZ8t5cCr0fbqLaQ00-Eu0Z_tgw2oc7seX6Pprx6-hgBtk8sOAgspuwY3PimBeQosdRhw_Rc14LeWrTVsGnbEsrrirEZmhfEGvUEdNZfWbsvP-1L8TF_Tmwt_QI7mYZudh_1X7ux8y9XaaihUkweIHdifWqTsvTfhPoQTAV57ZzaNL88Szm7ITDphvMGmoU5M8sxaipLyPQqkGq0syVRN7qY0xwr40JrAo-6ajPKDnXU-QG38v6poQBF8ZloAC-2WGE3OWohSdRrBje4VlE6e6-jh3lIID6Ii_ReEje8gT2ubZiBCehbvFcBvQ7kTItA9nk27d6_aShkOvwdJnj_WiaAP_9oh2Vj0-ajBIz1A93hIWwQdZ8aIiUTSAI2fXG-tk7O_6wSGcBK_1c7ImgTPvqgD6kduXoAQ9T_fnZ34DHWIs-lW7Ebd_POVtJAqXdIhQORD_1NC97BLa6ZmDxktQxYmhpjhyFSixO6vetwSqPkcwMhf3MSyl-2ERCwz5mITghha5rRjB5V0diw5wscHX49GIfZTNT014jU2lp_QCCb8QORZ-jWdvIIo-ceRNqf4_xzJcj50q7wtDkgRjoGwgo-NQactVb5kppGQL1Uj8HdKVH9DSzi4Dy8uGMybDPZFpQmSAlVA1qWZBEwAHTFHPlig6uSCfM6hHhUDQol6Q0buWZrIRb87vBiEXs0oWQ3CFDQsg2nQth4x7c5DXdacdglHh2uizcyW8Z4O1BfeCLO8zfZUwQCi9LcCfwHGQJLRdeFI14mHcf-HEqmDhAfcgUxPSFaJ6RH867lawXRbJ54FGyqwBko0L-b-p6hD86exltWuqluNcluEcZxbYRVC-TJE4xezQ=",
+        "summary": []
+      },
+      {
+        "id": "msg_02ac49a2d628ccb9016aec6f1956b887d298ca7fe2c928580c",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"observation_day\": 31,\n  \"observation_hour_utc\": 3,\n  \"station_number\": 41850,\n  \"precipitation_indicator\": 0,\n  \"weather_station_indicator\": 1,\n  \"cloud_base_min_m\": 300,\n  \"cloud_base_max_exclusive_m\": 600,\n  \"visibility_km\": 5,\n  \"total_cloud_oktas\": 8,\n  \"wind_direction_deg\": null,\n  \"wind_speed_mps\": 0,\n  \"air_temperature_c\": 22.2,\n  \"dewpoint_c\": 21,\n  \"station_pressure_hpa\": 1008.7,\n  \"msl_pressure_hpa\": 1018.8,\n  \"present_weather_code\": 5,\n  \"past_weather_1_code\": 2,\n  \"past_weather_2_code\": 2,\n  \"low_cloud_amount_oktas\": 8,\n  \"low_cloud_type_code\": 5,\n  \"medium_cloud_type_code\": 2,\n  \"high_cloud_type_code\": null,\n  \"minimum_temperature_c\": 21.3,\n  \"pressure_change_24h_hpa\": -0.8,\n  \"precipitation_24h_mm\": 2,\n  \"six_group_section1_present\": 0,\n  \"six_group_section3_present\": 0\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 558,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 467,
+      "output_tokens_details": {
+        "reasoning_tokens": 173
+      },
+      "total_tokens": 1025
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "status": "completed",
+  "answer": "{\n  \"observation_day\": 31,\n  \"observation_hour_utc\": 3,\n  \"station_number\": 41850,\n  \"precipitation_indicator\": 0,\n  \"weather_station_indicator\": 1,\n  \"cloud_base_min_m\": 300,\n  \"cloud_base_max_exclusive_m\": 600,\n  \"visibility_km\": 5,\n  \"total_cloud_oktas\": 8,\n  \"wind_direction_deg\": null,\n  \"wind_speed_mps\": 0,\n  \"air_temperature_c\": 22.2,\n  \"dewpoint_c\": 21,\n  \"station_pressure_hpa\": 1008.7,\n  \"msl_pressure_hpa\": 1018.8,\n  \"present_weather_code\": 5,\n  \"past_weather_1_code\": 2,\n  \"past_weather_2_code\": 2,\n  \"low_cloud_amount_oktas\": 8,\n  \"low_cloud_type_code\": 5,\n  \"medium_cloud_type_code\": 2,\n  \"high_cloud_type_code\": null,\n  \"minimum_temperature_c\": 21.3,\n  \"pressure_change_24h_hpa\": -0.8,\n  \"precipitation_24h_mm\": 2,\n  \"six_group_section1_present\": 0,\n  \"six_group_section3_present\": 0\n}",
+  "parsed_json": {
+    "observation_day": 31,
+    "observation_hour_utc": 3,
+    "station_number": 41850,
+    "precipitation_indicator": 0,
+    "weather_station_indicator": 1,
+    "cloud_base_min_m": 300,
+    "cloud_base_max_exclusive_m": 600,
+    "visibility_km": 5,
+    "total_cloud_oktas": 8,
+    "wind_direction_deg": null,
+    "wind_speed_mps": 0,
+    "air_temperature_c": 22.2,
+    "dewpoint_c": 21,
+    "station_pressure_hpa": 1008.7,
+    "msl_pressure_hpa": 1018.8,
+    "present_weather_code": 5,
+    "past_weather_1_code": 2,
+    "past_weather_2_code": 2,
+    "low_cloud_amount_oktas": 8,
+    "low_cloud_type_code": 5,
+    "medium_cloud_type_code": 2,
+    "high_cloud_type_code": null,
+    "minimum_temperature_c": 21.3,
+    "pressure_change_24h_hpa": -0.8,
+    "precipitation_24h_mm": 2,
+    "six_group_section1_present": 0,
+    "six_group_section3_present": 0
+  },
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "observation_day": true,
+      "observation_hour_utc": true,
+      "station_number": true,
+      "precipitation_indicator": true,
+      "weather_station_indicator": true,
+      "cloud_base_min_m": true,
+      "cloud_base_max_exclusive_m": true,
+      "visibility_km": true,
+      "total_cloud_oktas": true,
+      "wind_direction_deg": true,
+      "wind_speed_mps": true,
+      "air_temperature_c": true,
+      "dewpoint_c": true,
+      "station_pressure_hpa": true,
+      "msl_pressure_hpa": true,
+      "present_weather_code": true,
+      "past_weather_1_code": true,
+      "past_weather_2_code": true,
+      "low_cloud_amount_oktas": true,
+      "low_cloud_type_code": true,
+      "medium_cloud_type_code": true,
+      "high_cloud_type_code": true,
+      "minimum_temperature_c": true,
+      "pressure_change_24h_hpa": true,
+      "precipitation_24h_mm": true,
+      "six_group_section1_present": true,
+      "six_group_section3_present": true
+    }
+  },
+  "usage": {
+    "input_tokens": 558,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 467,
+    "output_tokens_details": {
+      "reasoning_tokens": 173
+    },
+    "total_tokens": 1025
+  },
+  "cost_usd": 0.02893,
+  "runtime_seconds": 10.294085792003898
+}

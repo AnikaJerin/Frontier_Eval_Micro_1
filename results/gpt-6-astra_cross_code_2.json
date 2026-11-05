@@ -1,0 +1,133 @@
+{
+  "model": "gpt-6-astra",
+  "task": "cross_code",
+  "trial": 2,
+  "utc": "2026-11-05T10:57:10.548699+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Return only one JSON object with exactly the requested keys; numbers must be JSON numbers, null where requested; no prose or Markdown. Numeric tolerance is 0.000001.\nSynthetic simultaneous excerpts: SYNOP section 1: 11008 21012 49987; METAR: 00000KT 0200 FG VV/// M01/M01 Q0998. Assume SYNOP MSL pressure lies in 900\u20131099.9 hPa and is the underlying value from which METAR QNH is rounded down to an integer hPa. Return synop_temperature_c, synop_dewpoint_c, synop_msl_pressure_hpa, metar_qnh_hpa, pressure_consistent (integer 1 if floor(SYNOP pressure) equals QNH, otherwise 0), metar_ceiling_ft_agl (null if unknown).",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_061155b13edb335a016aec611a390487d2880a05b2734a7085",
+    "object": "response",
+    "created_at": 1793876250,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793876252,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_061155b13edb335a016aec611b2c2487d28a0ebdb728ddcfa5",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7GEcpPGEWbENYgqfkI1KLKS8fn6VDoGbo-_0g9mQsgWJ5_luZPZOB34hqFanv-4EvpfD8jJJWFHMSbOkzIJlZywMm7IMk-N8qzK2zyKZpCSr17MqDEqGwgZChsusC-da3iJmpeiRPGreY3B9G5y1CEG7Wng8TQJGnjGWGrGZwe9ynIC8KWA3kl2CkXdvwQQ-RjhLFxE6zLaFZRq3NrJNjGHRSMdy-tADV57NcG7Xa9BSn_BXLAhOGv-Qlr3VwMJYkaG9OfjPSJk_L-AwiVpQOadXgHDCbJJyySZpV_DtLQHwcl6N6_jxlJLoSF4J946Kd46EyhJA1LIEHyQGzArVOj6geYLkdZoKN3pZqDikmvyegOZslKsXwb1UWst6JtvP-72YV-az7eHgk8s-kpcHql1jhKLhWY4sw8RPIZPRqvXu9H6CuJN2nFz2_OrLXR7NUU7gHBO8UyL7rReytTsuLgbuA0_vMBU8LFn9QQEg4OOheGVe7JHG8pXZpCFpGi51Wg8xWD482urys4uiQp2T41u5THTBnKjHq-sTQV_fXzN28h3hWRl4khKzY9Uo_3uEA_33TiFF40_0jvwbroOauBsVX30nC8aoDs0UXlpiyzWFvq4k2dcwZU6bLka_ceu3ZtDvjgKrd_xl0xAntFImJrv4puU4EVjVi99fPK9tMbab2nJP0NolPgKOYNpS0qjLfp1JDA2JHQigEwaZS8G4I8VDUeS-02evM2Uma8u9SFaptZJnGMoWyYeQoxqdYMctkl_EZ8W-0kY5G8iW6mPOvJjzrG3vyX1FV0JXV_NG5zyYvFmzfDi5n_emZe5IVDWyn_3knJIroUyEtVZRjnAKEyemmMgnY1TbjToWlZ_2TzToSmU4jceZfbDt3vZ6mMG-S-jomikTTli6Uvxnkm-2Zx-xnzi-vQ6epYqk9AhiBKXzm8UZJZEOEzd1EiCCDHhUuIKSJ5VQztKP4RIW7lrNFjLYTxPB5hw-_0VKXlytAuiF2n_Z2aT-LvJ1IF44bovbnuR673_ke0aJNW6s2HdU_troi6ipQ-YpoFyhgwofshYbPeXUOdGabT9Gn-yuRLyMtk7QG4-NelRwNVIVja_wghjS2ztibi6kFjeCncN2MwFmf9WkkEge1qbONwwq3qu0-RONoP6PGEAGiiJmS8Y8XQ3MxcGN4AU02f1_ed-NCZ8PUQh3ZhLw80nT1kuuknEeXXldgcAmcTC9sAXt9vAnDu47axpN78da8p1MvDvBT3weJjWbwYg7mcBltJqcAXlCoGoul_XrIKH0CZMnXbNtupkCXR9JZpFPzMF7QvdE5ZD1WlQaDs8-XMQ3jgvR9sIcPFocQr0rejYXohkX56gCQEbWeC38IIsDfheNSK-jO4p_rjAwWRZ6OcwjSJ5COg_GMNNCn6KDcpat8NWTGETKr1EG3mCTnzvjrlJsVzj-A3WwnK53bhfuxji9EjT_3Owo1ze8kqbJs189dCw60JgH4iyi5I6MwRhwraix-SPUXy3DyDiIIcMO5RVV0lpe9_bf4IpRlH23pY8hNDF9p-lOrdwaY0WFeE5ERbhJCb3o3R3HPUow7Ly7FYX-ZmL1RgQv8nxRK89Isru9nakM63PHmpNxsYeAr8xntynw2bkshDwXb-z_k5uXOAZXNIAkB0AvpYfMeOGDOhckCeVXIWYRAVVogBPEhiiPKQ7RTdkYWjiZtQLRyX58QYrBi46I0rSnq6ObfmT0yqdhehimdaowYVmC6O-y2kV7qmfcxSGy43kB_RGPfMDW5_Tot_d48mfGn2nMskaOwGDexDFp-OQgNGo1qCbJGBokwjCXcBfo3-lX3d4=",
+        "summary": []
+      },
+      {
+        "id": "msg_061155b13edb335a016aec611c070487d2ba88e90a91325ac7",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"synop_temperature_c\":-0.8,\"synop_dewpoint_c\":-1.2,\"synop_msl_pressure_hpa\":998.7,\"metar_qnh_hpa\":998,\"pressure_consistent\":1,\"metar_ceiling_ft_agl\":null}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 181,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 111,
+      "output_tokens_details": {
+        "reasoning_tokens": 45
+      },
+      "total_tokens": 292
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "status": "completed",
+  "answer": "{\"synop_temperature_c\":-0.8,\"synop_dewpoint_c\":-1.2,\"synop_msl_pressure_hpa\":998.7,\"metar_qnh_hpa\":998,\"pressure_consistent\":1,\"metar_ceiling_ft_agl\":null}",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "synop_temperature_c": true,
+      "synop_dewpoint_c": true,
+      "synop_msl_pressure_hpa": true,
+      "metar_qnh_hpa": true,
+      "pressure_consistent": true,
+      "metar_ceiling_ft_agl": true
+    }
+  },
+  "cost_usd": 0.00736,
+  "runtime_seconds": 2.919289666984696
+}

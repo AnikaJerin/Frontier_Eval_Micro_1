@@ -1,0 +1,153 @@
+{
+  "task": "RT06",
+  "model": "gpt-6-astra",
+  "trial": 2,
+  "utc": "2026-11-05T15:47:25.596244+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Decode the following user-provided TAF report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nTAF EGLL 310459Z 3106/0112 10005KT 6000 SCT005 TEMPO 3106/3110 1500 BR PRFG BKN002 PROB40 3106/3109 0300 FG VV/// BECMG 3109/3111 9999 BECMG 3121/3124 5000 HZ TEMPO 0100/0103 2000 MIFG BR BKN002 PROB30 0101/0103 0300 FG VV/// BECMG 0103/0106 0300 FG VV/// BECMG 0109/0112 9999 NSW FEW010\n\nAt day 31 07:00 UTC return prevailing_visibility_m, tempo_visibility_m, tempo_ceiling_ft_agl, probability_percent, probability_visibility_m and probability_vertical_visibility_ft. VV/// is unavailable, not zero.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_08bb19b5f8d4805d016aeca52143a887d29e54e41c662c3485",
+    "object": "response",
+    "created_at": 1793893665,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793893667,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_08bb19b5f8d4805d016aeca5225bac87d2ae9b01dcfa003644",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7KUjVzYR0zT4KOR-afmNv1RFiuHRaZcPdE0CugPwLpeT6XyqFR2hfXO3pmO08A33YJgaXuDwiF90111X_nrd1L5Mr3zxasX3QGQYAQazzNkTklJefl6wNEvOIp9Fmx2GR0Cgd92G1RcvJD5j-UD1c67h0w7D8R23P5Y0sj7GjkOgipop1CuW4CIUrmoNG9pq0ePSjPOM8gmFrPNRmwywFHeSzq_860hFT2P9D41EEFSEy_lTKI0kZkHLUB7MGscELWWrK2pEQAkHDmZp6tsxJIq0PKq1wgYbMAT4yUBuMHWGIu2nTe-FsDcA94fhivuHff1QpdfQGT1KouamgDhHckvNX98z8kvVUaayIRsTw3eL28FxzUO5E0DD9yZF3R964JM0LfCwXzFjON8vnp0SyxRDRRPhweFiQyllFh-yobefqPfd1xUtdmfQDdb_hXfhyO0yiWVOetjGf_R9J4Rnr5KR84r7u8p-G4bHx_YQInIGbUZlgSdEuQHEQBpxg8-s_muDr1P5BKWsZ0QqX0stQff2ZIBwue1RgoOK3HNt_Q1c1WL-9kTcrMnB2Qs484_5Gq0YfJbPeEHko_wGOTTkCVQPIl6dtNP-gWaLsEqUtoj_aMGPsYuz_u6LCD8DJy_ssjDGOWAnwjHEDC3qVYoSHl9kUdxQl0VaElFKabqMmHQ_gJPmYtRieC94v2YriGYSLkUw4ZjOyo9eMirvjtL-UdGeIrPXRm1Q3lWc52qVamGzkQqXszhTpkXAMdfLoJVmgf5xkuXLZL7AAgz74NL4Em19HXWuATaU1tWHCHoaCm1kUcFx0IToijGw4a-Dea0gXl58pHTrEpN_4HtjTuu-gFXJzydWVy4U_7wTsE4C-lmBKKvW3GoXU3FABh8vtqsLGeVlaFejqm7OySMnpvIKD6yPwztiqCdIoSWhRXfJlrwEFxdPv7EZEyH6x5BdC0PCP896O-9zucw6vXhzUUkahA8x9Zza_O3Mbjoq3MDmut9f4qPZuytKrPjyMd7xWIvYbt7IXdMbb360niErlc-5vGp2qI-jH69R0jgsHutJOzO31DVLeWEunL_pdYUCU95nvLh_tm9WFtxvK78ROtbphb7YT8srvjkOOHk--O7nNRj4ETP-26Yrbas9rYavXpnMAdsAG-FCg-gxb8PeqA4a6HeuTFtbm0dv7Ml6paTzoiFfK4G_MViVUoNwCRy4Hm7sfRYkauLszgFTgRA6UVgoCSPACu7gLpmtqzeRVqHmDUS1TIAkLvsRkpCQ__IySQZEcU70ST5v_FyUriZi_CoqUX0KoQ333V1d-CYkkN3zHbGQ0bIQSvx82x8csYjOG6jEvUqe8wLHlEY74xNw-A24s8dUI7j0k8Mr3VKxb1no_P7KhQur6u5DKwsvmVFMc969pdJlNZ_Z6AAfO0SlNHCYkn5rVytbNYwzscX1MJmM-IDa5-lmw0uVhlXuw6o36aPOwXqKFIl_Xix6Dspsn5TTJh_Ec9I6smyMta_YhPml0f2GOsRmGza4A0JaY6gwVoSGsjrOILHVBcvvmB3TnF2K_gvzPzL4GHvdE1mrlWzcdJZPI4Z6yao_GfU5IZGvv1ZDLVOGFRS9u-G73euvH7qJ0C6GQJHg8a5791YtJ9Po_XFv3MGDBmk1dc12QOSnWPTvuevhiAoHFarQMjFx03CFE_zrpFb5EEU4yUw0pfIw8QjfbaBfDPEwMjOOpX_4GsNCga6lUAAdctRkVFVdRzgRSN0ngg==",
+        "summary": []
+      },
+      {
+        "id": "msg_08bb19b5f8d4805d016aeca5233f0087d2a76c070e6fc30456",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\n  \"prevailing_visibility_m\": 6000,\n  \"tempo_visibility_m\": 1500,\n  \"tempo_ceiling_ft_agl\": 200,\n  \"probability_percent\": 40,\n  \"probability_visibility_m\": 300,\n  \"probability_vertical_visibility_ft\": null\n}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 286,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 101,
+      "output_tokens_details": {
+        "reasoning_tokens": 31
+      },
+      "total_tokens": 387
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "answer": "{\n  \"prevailing_visibility_m\": 6000,\n  \"tempo_visibility_m\": 1500,\n  \"tempo_ceiling_ft_agl\": 200,\n  \"probability_percent\": 40,\n  \"probability_visibility_m\": 300,\n  \"probability_vertical_visibility_ft\": null\n}",
+  "parsed_json": {
+    "prevailing_visibility_m": 6000,
+    "tempo_visibility_m": 1500,
+    "tempo_ceiling_ft_agl": 200,
+    "probability_percent": 40,
+    "probability_visibility_m": 300,
+    "probability_vertical_visibility_ft": null
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "prevailing_visibility_m": true,
+      "tempo_visibility_m": true,
+      "tempo_ceiling_ft_agl": true,
+      "probability_percent": true,
+      "probability_visibility_m": true,
+      "probability_vertical_visibility_ft": true
+    }
+  },
+  "usage": {
+    "input_tokens": 286,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 101,
+    "output_tokens_details": {
+      "reasoning_tokens": 31
+    },
+    "total_tokens": 387
+  },
+  "estimated_cost_usd": 0.00791,
+  "runtime_seconds": 2.868219666008372
+}

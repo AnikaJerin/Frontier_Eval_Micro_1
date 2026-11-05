@@ -1,0 +1,76 @@
+{
+  "task_id": "synop_cold",
+  "trial": 2,
+  "utc": "2026-11-05T10:46:50.308628+00:00",
+  "request": {
+    "model": "muse-wonder-1.0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Decode this synthetic meteorological fixture. Return only one JSON object, with exactly the requested keys. Numeric values must be JSON numbers in the requested units; unavailable values must be null. No prose or Markdown. Numeric tolerance is 0.000001.\nAAXX 05121 03772 11560 82510 11025 21048 49987\nDecode section 1 air_temperature_c, dewpoint_c, msl_pressure_hpa. Pressure is within 900\u20131099.9 hPa."
+      }
+    ],
+    "max_tokens": 2048,
+    "reasoning_effort": "minimal"
+  },
+  "raw_response": {
+    "id": "chatcmpl-01a1ab51-e060-70c2-9315-dea6dafdc057",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"air_temperature_c\": -2.5, \"dewpoint_c\": -4.8, \"msl_pressure_hpa\": 998.7}",
+          "refusal": null,
+          "role": "assistant"
+        },
+        "logprobs": null
+      }
+    ],
+    "created": 1793875632,
+    "model": "muse-wonder-1.0",
+    "service_tier": "default",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 483,
+      "prompt_tokens": 112,
+      "total_tokens": 595,
+      "completion_tokens_details": {
+        "reasoning_tokens": 442
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    }
+  },
+  "response": {
+    "status": "completed",
+    "model": "muse-wonder-1.0",
+    "usage": {
+      "input_tokens": 112,
+      "output_tokens": 483
+    },
+    "output": [
+      {
+        "type": "message",
+        "content": [
+          {
+            "type": "output_text",
+            "text": "{\"air_temperature_c\": -2.5, \"dewpoint_c\": -4.8, \"msl_pressure_hpa\": 998.7}"
+          }
+        ]
+      }
+    ]
+  },
+  "runtime_seconds": 6.667524415999651,
+  "estimated_cost_usd": 0.010108,
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "air_temperature_c": true,
+      "dewpoint_c": true,
+      "msl_pressure_hpa": true
+    }
+  }
+}

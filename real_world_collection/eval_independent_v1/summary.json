@@ -1,0 +1,554 @@
+{
+  "overall": {
+    "saved_records": 108,
+    "completed": 107,
+    "unscored": 1,
+    "passed": 97,
+    "failed": 10,
+    "field_correct": 534,
+    "field_total": 540,
+    "known_estimated_cost_usd": 0.456074,
+    "unknown_cost_records": 1
+  },
+  "models": {
+    "gpt-5.4": {
+      "saved_records": 36,
+      "completed": 35,
+      "unscored": 1,
+      "passed": 27,
+      "failed": 8,
+      "field_correct": 164,
+      "field_total": 168,
+      "known_estimated_cost_usd": 0.049453,
+      "unknown_cost_records": 1
+    },
+    "gpt-6-astra": {
+      "saved_records": 36,
+      "completed": 36,
+      "unscored": 0,
+      "passed": 36,
+      "failed": 0,
+      "field_correct": 186,
+      "field_total": 186,
+      "known_estimated_cost_usd": 0.20351,
+      "unknown_cost_records": 0
+    },
+    "muse-wonder-1.0": {
+      "saved_records": 36,
+      "completed": 36,
+      "unscored": 0,
+      "passed": 34,
+      "failed": 2,
+      "field_correct": 184,
+      "field_total": 186,
+      "known_estimated_cost_usd": 0.203112,
+      "unknown_cost_records": 0
+    }
+  },
+  "tasks": {
+    "E01": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 21,
+        "field_total": 21,
+        "known_estimated_cost_usd": 0.003772,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 21,
+        "field_total": 21,
+        "known_estimated_cost_usd": 0.01667,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 21,
+        "field_total": 21,
+        "known_estimated_cost_usd": 0.012705,
+        "unknown_cost_records": 0
+      }
+    },
+    "E02": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 18,
+        "field_total": 18,
+        "known_estimated_cost_usd": 0.005168,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 18,
+        "field_total": 18,
+        "known_estimated_cost_usd": 0.0189,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 18,
+        "field_total": 18,
+        "known_estimated_cost_usd": 0.01406,
+        "unknown_cost_records": 0
+      }
+    },
+    "E03": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 21,
+        "field_total": 21,
+        "known_estimated_cost_usd": 0.005475,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 21,
+        "field_total": 21,
+        "known_estimated_cost_usd": 0.02533,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 21,
+        "field_total": 21,
+        "known_estimated_cost_usd": 0.017858,
+        "unknown_cost_records": 0
+      }
+    },
+    "RM01": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 21,
+        "field_total": 21,
+        "known_estimated_cost_usd": 0.003683,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 21,
+        "field_total": 21,
+        "known_estimated_cost_usd": 0.01317,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 21,
+        "field_total": 21,
+        "known_estimated_cost_usd": 0.012897,
+        "unknown_cost_records": 0
+      }
+    },
+    "RM05": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 0,
+        "failed": 3,
+        "field_correct": 0,
+        "field_total": 0,
+        "known_estimated_cost_usd": 0.008738,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 9,
+        "field_total": 9,
+        "known_estimated_cost_usd": 0.01023,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 9,
+        "field_total": 9,
+        "known_estimated_cost_usd": 0.010369,
+        "unknown_cost_records": 0
+      }
+    },
+    "RM07": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 15,
+        "field_total": 15,
+        "known_estimated_cost_usd": 0.003315,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 15,
+        "field_total": 15,
+        "known_estimated_cost_usd": 0.01194,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 15,
+        "field_total": 15,
+        "known_estimated_cost_usd": 0.014073,
+        "unknown_cost_records": 0
+      }
+    },
+    "RS03": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 2,
+        "failed": 1,
+        "field_correct": 8,
+        "field_total": 8,
+        "known_estimated_cost_usd": 0.003015,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 12,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.01656,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 12,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.022417,
+        "unknown_cost_records": 0
+      }
+    },
+    "RS05": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 2,
+        "unscored": 1,
+        "passed": 0,
+        "failed": 2,
+        "field_correct": 8,
+        "field_total": 10,
+        "known_estimated_cost_usd": 0.00257,
+        "unknown_cost_records": 1
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 15,
+        "field_total": 15,
+        "known_estimated_cost_usd": 0.02459,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 1,
+        "failed": 2,
+        "field_correct": 13,
+        "field_total": 15,
+        "known_estimated_cost_usd": 0.035236,
+        "unknown_cost_records": 0
+      }
+    },
+    "RS08": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 12,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.002528,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 12,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.00915,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 12,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.009585,
+        "unknown_cost_records": 0
+      }
+    },
+    "RT02": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 1,
+        "failed": 2,
+        "field_correct": 10,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.003615,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 12,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.01809,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 12,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.018746,
+        "unknown_cost_records": 0
+      }
+    },
+    "RT04": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 12,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.00318,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 12,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.01515,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 12,
+        "field_total": 12,
+        "known_estimated_cost_usd": 0.018624,
+        "unknown_cost_records": 0
+      }
+    },
+    "RT06": {
+      "gpt-5.4": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 18,
+        "field_total": 18,
+        "known_estimated_cost_usd": 0.004395,
+        "unknown_cost_records": 0
+      },
+      "gpt-6-astra": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 18,
+        "field_total": 18,
+        "known_estimated_cost_usd": 0.02373,
+        "unknown_cost_records": 0
+      },
+      "muse-wonder-1.0": {
+        "saved_records": 3,
+        "completed": 3,
+        "unscored": 0,
+        "passed": 3,
+        "failed": 0,
+        "field_correct": 18,
+        "field_total": 18,
+        "known_estimated_cost_usd": 0.016542,
+        "unknown_cost_records": 0
+      }
+    }
+  },
+  "failures": [
+    {
+      "task": "RS05",
+      "model": "muse-wonder-1.0",
+      "trial": 3,
+      "incorrect_fields": [
+        "pressure_change_24h_hpa"
+      ],
+      "error": null
+    },
+    {
+      "task": "RM05",
+      "model": "gpt-5.4",
+      "trial": 1,
+      "incorrect_fields": [],
+      "error": "exact key set required"
+    },
+    {
+      "task": "RS05",
+      "model": "gpt-5.4",
+      "trial": 1,
+      "incorrect_fields": [
+        "pressure_change_24h_hpa"
+      ],
+      "error": null
+    },
+    {
+      "task": "RT02",
+      "model": "gpt-5.4",
+      "trial": 3,
+      "incorrect_fields": [
+        "temporary_ceiling_ft_agl"
+      ],
+      "error": null
+    },
+    {
+      "task": "RS05",
+      "model": "gpt-5.4",
+      "trial": 3,
+      "incorrect_fields": [
+        "pressure_change_24h_hpa"
+      ],
+      "error": null
+    },
+    {
+      "task": "RS03",
+      "model": "gpt-5.4",
+      "trial": 2,
+      "incorrect_fields": [],
+      "error": "exact key set required"
+    },
+    {
+      "task": "RT02",
+      "model": "gpt-5.4",
+      "trial": 1,
+      "incorrect_fields": [
+        "temporary_ceiling_ft_agl"
+      ],
+      "error": null
+    },
+    {
+      "task": "RS05",
+      "model": "muse-wonder-1.0",
+      "trial": 1,
+      "incorrect_fields": [
+        "pressure_change_24h_hpa"
+      ],
+      "error": null
+    },
+    {
+      "task": "RM05",
+      "model": "gpt-5.4",
+      "trial": 3,
+      "incorrect_fields": [],
+      "error": "exact key set required"
+    },
+    {
+      "task": "RM05",
+      "model": "gpt-5.4",
+      "trial": 2,
+      "incorrect_fields": [],
+      "error": "exact key set required"
+    }
+  ]
+}

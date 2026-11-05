@@ -1,0 +1,12 @@
+{
+  "status": "pre-inference candidate freeze; no model trials",
+  "dataset_sha256": "0d7219c2750ce1694fe9d59dbc1a0f799dd10eb95f91b0dd9462e6026e25863f",
+  "sha256": {
+    "tasks.json": "bd46782106b64ec34e8843aa805ea4919b78e7bd77218c994ee7b377c2fe11e1",
+    "grader.py": "64a609d02bc0d823fadbcb000781ccf7247f15fc3fa08bbc5e4a63ae1c85c6f0",
+    "create_tasks.py": "ca18e1a1a21cafa1fd9fccb5696e874bd6f44e890e6afaedb99946a3fcb2160c",
+    "tests/test_tasks.py": "550153e1f89ad1ff10157af2fe658bb9e05496a7a354677b5306220f32382d6c",
+    "REFERENCE_AUDIT.md": "a70e2398d10cb9c6d375425e3b6e2258904e25068c9d7fa71746bf2c411ee6e2",
+    "README.md": "ae39838c4195e68e5f329019961a1bf2790dfae251dadafe3d09b7b12fda697e"
+  }
+}

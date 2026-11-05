@@ -1,0 +1,155 @@
+{
+  "task": "E03",
+  "model": "gpt-6-astra",
+  "trial": 1,
+  "utc": "2026-11-05T15:48:45.160564+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "A quality-control analyst must check an extracted SYNOP report. Use the report's Section 1 1snTTT and 2snTdTdTd groups for air temperature and dew point in Celsius. Compute air temperature minus dew point. In Section 3 interpret group 59ppp as a 24-hour pressure decrease in tenths of hPa, and group 7R24R24R24R24 as the 24-hour precipitation amount in tenths of a millimetre. A reviewer proposed that 70020 means 20 mm; test that proposal. The code text and specified rules are supplied, not independent verification that the station observed the values.\n\nAAXX 31031 41850 01450 8//00 10222 20210 30087 40188 70522 8852/ 333 20213 59008 70020==\n\nReturn exactly one JSON object with exactly the requested keys. Use JSON booleans, numbers and null as specified; no prose or Markdown. Keys: air_temperature_c (number); dewpoint_c (number); temperature_dewpoint_spread_c (number); pressure_change_24h_hpa (signed number); precipitation_24h_mm (number); proposed_20mm_correct (boolean); independently_verified_station_observation (boolean).",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_0ddfba0375eff03a016aeca570572887d28fe17dec34dd0d6d",
+    "object": "response",
+    "created_at": 1793893744,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793893747,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_0ddfba0375eff03a016aeca571f55887d2af3ed2d1711d17a2",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7KVzcqmogj_PtracPZqdZ5HKiGcN9RYmVZWmLUbmvhB7SSJAFx96jehh5nOXqyqAxoa8RG-Xb2xAgg8s8uU-SF6GOCvcF_lc1Jeyn9ZAC6TxfftvfvrqiCkBPxVPaIBWku8BUECMoH1ynG6xfIU59yJkeFTF4nZdSZZsPkC-nNDdz_NeRj4XSJ5uqz5iZptbOFI8I0ULWfFo8fAxFoEOvmY0AtN9mx6w67tWQRamSbYuz13TPAcGr9TvT_yhGPsNLv7sJZQkIazYHU6jVeOWs4iL9GKk_zWLgHJoCR7DTj-oeFTlOAPjF9bWmXdh56UqPvbuN_R8ntO0mo76QvU5SSi_XsaC_hA3vp6z7tceP2bl2pc7CYpyBQ_KYUy8lpMVw3Hf71VA0GZt7xfbfHj3W3Is2i_fjd-558ZOKEt1ZrS6rX5ZcecsFfw5500THz6_C0BmKY3z-EtEOCZIjCwHtrcMfeyVrSXvfrvQT-m1-q5smuvLZ2JqpkEBuE_26SRbM4f2OvZM8T6cRjCgMXM7m6aAV7NrnP1ZvK1xDZ9-MGJGmO_AFMfjPsmpfCJXrxobZxcxZUVm1whZp6Hw8hSK0KQFpOQW3-uE4En3vSD9MMFkaenxzAnq4Zgdf0eml3R0QUAZfni0BK4Os_oC84gv7WPGpzaK8077d7gk7SiL8lYL3pl148r_M87U-QW4Ke_VG4hRH6FTtXIv9S8nSvtfTdQJyfl58tk0k07C0aSKDgbatuVF4R86GtqSpLB7-GjgfJ9YQ6ORyvCuAzI_XrjbVWZe61dB6I_c1eGsnnBvRbABttvqofH4VtqVBIvTnBj7noB30_QLwm8YP6xn2eS1bln8GG41XIcXP00lUZXVZQZnEU2uGyV4DJcxFuH7gcR6QdVpjRKNSszd5Gb58gSXCfNOsBNHiAJOyralehQ-98QZXuIJfd7Clc7WmCi2bs5jOUblcp-zT2BDYS_P45e_cyV7O4i8cJPrYWvRDsKgt8KpMosZ2Lny1sg_4Eh9XLDXJV5lZ9wsIHSq47s08SSIQCL58BSptLLLY2zEkc40VdkBmpnIGabKZGFB5hn3Ao1pv710BxA_V1AakXITpktwtXI2Fe-xjgAvjCODEXfnnjBZs5YlfI9VqidzcmXCG0NYanMc50JFO42VzBNsq748By4zrnBTdRqmd65vamZ1Mfk2hCDrNR40Oysjg-DEbdBJdk5wDma67iHK9C321AI-8k6AVvt4-Lmv7HVL4nCtgGNrP7BFAlrs3HceUHfZ-HDv9KfKeOEAQSPgDwishvpwfbPZRUYMEhowLQDzEyAum0cXVIJ7GeMg8aTTUV2aMg2fRyRx8Lh-DlY9fG5lKtICmUsDYWSAvVlxNZJ_jK3biqWRX3pETSA36xqa0Lio5oYHlucitqe7jCIyPfjSn1vh2Jp7qPDrSt5URD4RCJOP_dieSDrwWO8Rpb_-3O1QBVi11X2y_3ETMgg3uAlSZcQes1Xsn8wyRF3__6Xz2f1rmfdAWe-sOjDZuh_TH1yF39bZzsDJWwO0qFeYebAkSJGbggt_AJ_KAzS7NfLUKb7p--aYwhHzPyqSEAshXs09gOZZa4uuYWyiFbHm-I86QD48hlUhLKP0ZMg3Y8nSQUHRyUib_mS9V027q1OTzfHNBC4v20Z9n1B6riUW9VPfBlfSD7eWUKdLgVok6pmchzCo02btYI5MfohNw6Fh874QEjNFW6j9RaiSQDftVPUJeGu82353unztUkBQmLamZwcLrhXvqmUE7iOXpLlY8eMfaXeDgEHe",
+        "summary": []
+      },
+      {
+        "id": "msg_0ddfba0375eff03a016aeca572a2bc87d2b29735a36c268d6b",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"air_temperature_c\":22.2,\"dewpoint_c\":21.0,\"temperature_dewpoint_spread_c\":1.2,\"pressure_change_24h_hpa\":-0.8,\"precipitation_24h_mm\":2.0,\"proposed_20mm_correct\":false,\"independently_verified_station_observation\":false}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 276,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 113,
+      "output_tokens_details": {
+        "reasoning_tokens": 34
+      },
+      "total_tokens": 389
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "answer": "{\"air_temperature_c\":22.2,\"dewpoint_c\":21.0,\"temperature_dewpoint_spread_c\":1.2,\"pressure_change_24h_hpa\":-0.8,\"precipitation_24h_mm\":2.0,\"proposed_20mm_correct\":false,\"independently_verified_station_observation\":false}",
+  "parsed_json": {
+    "air_temperature_c": 22.2,
+    "dewpoint_c": 21.0,
+    "temperature_dewpoint_spread_c": 1.2,
+    "pressure_change_24h_hpa": -0.8,
+    "precipitation_24h_mm": 2.0,
+    "proposed_20mm_correct": false,
+    "independently_verified_station_observation": false
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "air_temperature_c": true,
+      "dewpoint_c": true,
+      "temperature_dewpoint_spread_c": true,
+      "pressure_change_24h_hpa": true,
+      "precipitation_24h_mm": true,
+      "proposed_20mm_correct": true,
+      "independently_verified_station_observation": true
+    }
+  },
+  "usage": {
+    "input_tokens": 276,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 113,
+    "output_tokens_details": {
+      "reasoning_tokens": 34
+    },
+    "total_tokens": 389
+  },
+  "estimated_cost_usd": 0.00841,
+  "runtime_seconds": 3.377637416997459
+}

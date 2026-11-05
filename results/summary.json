@@ -1,0 +1,110 @@
+{
+  "gpt-5.4": {
+    "completed_trials": 15,
+    "passes": 1,
+    "pass_rate": 0.06666666666666667,
+    "empirical_task_pass3": 0.0,
+    "mean_task_field_score": 0.6038461538461538,
+    "cost_usd": 0.02304,
+    "runtime_seconds": 38.21135774999857,
+    "per_task": {
+      "T13": {
+        "passes": 0,
+        "trials": 3,
+        "pass3": 0
+      },
+      "cross_code": {
+        "passes": 0,
+        "trials": 3,
+        "pass3": 0
+      },
+      "synop_cold": {
+        "passes": 1,
+        "trials": 3,
+        "pass3": 0
+      },
+      "synop_trend": {
+        "passes": 0,
+        "trials": 3,
+        "pass3": 0
+      },
+      "taf_four_times": {
+        "passes": 0,
+        "trials": 3,
+        "pass3": 0
+      }
+    }
+  },
+  "gpt-6-astra": {
+    "completed_trials": 15,
+    "passes": 15,
+    "pass_rate": 1.0,
+    "empirical_task_pass3": 1.0,
+    "mean_task_field_score": 1.0,
+    "cost_usd": 0.12401,
+    "runtime_seconds": 57.01943533497979,
+    "per_task": {
+      "T13": {
+        "passes": 3,
+        "trials": 3,
+        "pass3": 1
+      },
+      "cross_code": {
+        "passes": 3,
+        "trials": 3,
+        "pass3": 1
+      },
+      "synop_cold": {
+        "passes": 3,
+        "trials": 3,
+        "pass3": 1
+      },
+      "synop_trend": {
+        "passes": 3,
+        "trials": 3,
+        "pass3": 1
+      },
+      "taf_four_times": {
+        "passes": 3,
+        "trials": 3,
+        "pass3": 1
+      }
+    }
+  },
+  "muse-wonder-1.0": {
+    "completed_trials": 15,
+    "passes": 15,
+    "pass_rate": 1.0,
+    "empirical_task_pass3": 1.0,
+    "mean_task_field_score": 1.0,
+    "cost_usd": 0.15047159999999998,
+    "runtime_seconds": 69.58664558298187,
+    "per_task": {
+      "T13": {
+        "passes": 3,
+        "trials": 3,
+        "pass3": 1
+      },
+      "cross_code": {
+        "passes": 3,
+        "trials": 3,
+        "pass3": 1
+      },
+      "synop_cold": {
+        "passes": 3,
+        "trials": 3,
+        "pass3": 1
+      },
+      "synop_trend": {
+        "passes": 3,
+        "trials": 3,
+        "pass3": 1
+      },
+      "taf_four_times": {
+        "passes": 3,
+        "trials": 3,
+        "pass3": 1
+      }
+    }
+  }
+}

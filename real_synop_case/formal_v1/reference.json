@@ -1,0 +1,9 @@
+{
+  "observation_day":31,"observation_hour_utc":3,"station_number":41850,
+  "precipitation_indicator":0,"weather_station_indicator":1,"cloud_base_min_m":300,"cloud_base_max_exclusive_m":600,"visibility_km":5,
+  "total_cloud_oktas":8,"wind_direction_deg":null,"wind_speed_mps":0,
+  "air_temperature_c":22.2,"dewpoint_c":21.0,"station_pressure_hpa":1008.7,"msl_pressure_hpa":1018.8,
+  "present_weather_code":5,"past_weather_1_code":2,"past_weather_2_code":2,
+  "low_cloud_amount_oktas":8,"low_cloud_type_code":5,"medium_cloud_type_code":2,"high_cloud_type_code":null,
+  "minimum_temperature_c":21.3,"pressure_change_24h_hpa":-0.8,"precipitation_24h_mm":2.0,"six_group_section1_present":0,"six_group_section3_present":0
+}

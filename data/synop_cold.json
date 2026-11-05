@@ -1,0 +1,9 @@
+{
+  "id": "synop_cold",
+  "model_visible_prompt": "Decode this synthetic meteorological fixture. Return only one JSON object, with exactly the requested keys. Numeric values must be JSON numbers in the requested units; unavailable values must be null. No prose or Markdown. Numeric tolerance is 0.000001.\nAAXX 05121 03772 11560 82510 11025 21048 49987\nDecode section 1 air_temperature_c, dewpoint_c, msl_pressure_hpa. Pressure is within 900\u20131099.9 hPa.",
+  "reference": {
+    "air_temperature_c": -2.5,
+    "dewpoint_c": -4.8,
+    "msl_pressure_hpa": 998.7
+  }
+}

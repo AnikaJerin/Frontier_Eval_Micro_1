@@ -1,0 +1,149 @@
+{
+  "task": "RT04",
+  "model": "gpt-6-astra",
+  "trial": 3,
+  "utc": "2026-11-05T15:47:00.823795+00:00",
+  "request": {
+    "model": "gpt-6-astra",
+    "input": "Decode the following user-provided TAF report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nTAF KJFK 310525Z 3106/0112 33013KT P6SM FEW250 FM010000 32007KT P6SM SKC\n\nReturn wind_before_kt, wind_at_boundary_kt, wind_direction_at_boundary_deg and coded_ceiling_at_boundary_ft_agl at day 31 23:59 and day 01 00:00 UTC. FM is start-inclusive; SKC has no coded numeric ceiling.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_091a4cee6847722a016aeca508ea0487d289c3f71b73d0f8d8",
+    "object": "response",
+    "created_at": 1793893640,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793893642,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-6-astra",
+    "moderation": null,
+    "output": [
+      {
+        "id": "rs_091a4cee6847722a016aeca50a3ee487d2ac134645726043d1",
+        "type": "reasoning",
+        "content": [],
+        "encrypted_content": "gAAAAABq7KULpTE47_U6QPwD7qqMfvqEiQYdnFn4ZeaZX6Fd0He59KCt6pauLZ6PCwqyJy6i66toX_qjwLIPw16k490BtgsRmPSB_MRiG9N4oqxVdKjUAz_S0E7SxnKywN6KngtHAenKqH_ztO3V_T7cL2FU03U24_Mpr1aUjcZjoo3IROLdIZUIGMB1iMrEY5n84WimtnPv49EB7jvKAOWWQ8nQLEN4-GjMtkr8rlWDX-7tmMoDAF7QgZlTRNTkLFtIWRb_J2Njsv9gDbTvBrRzaodUUp-3sz8HkuE3DePqcw9PRmeOjTjRayeDKk06qiMs_SQs3S0YWXtR1M_d95z_9H4RTCwmYimerbdMit9yx_SO4Qkfd4rpx6E3MGzooeu9mOsyLJVoQz95RkGH2HwqrlMC0_NJJpMiA7dBbDSWBqPzhB5ZJZyt6pQKwrH-Hf8gBDbgulwT55NIqOk_CfJAp78nXf1OFmmpK1Obbi0TBymn7HOWVkKeLfjU_BaUgKxp4IiXLoj5P0qYQYjROUi5l4pg712Wo9EKcyC3c24qnrY9CtBJIwNuiE6tITI5YYbTkhHjtcjh1fXfD_YPfFvUwBGV9lmf747ItV6f3GJ7zh15YBbHEbnfzQeaq4bRGtnaF7Iz5OhS8tvj7rzqdBiIiuli0iukYftj10P8q0w85LwZ-nmmDNW_AuDJxOwGhy1sMeTJpjnaYXdZJKlAmgmnmg8rxbslE-O1MpiPxV2NOupu0NoxHh64_FBlmUDC0aEZRN4qgpuvwvQs88Gkvr137uMKSkgx5Hg_WHQYZmJbC7Y9xyjHzStCleUdKJZJZdPEiqjpZ4WZ5xUEYR3RvcKSuYS1RjZGtDNGuuATt8g6nynWBTS0pj4bkXXVj5iMnTGHetS-MegOr1bq-ez84jWip3BSl5Pz-p5hOZxb1P963XecC65k43vVhUWqdlAWDpi1R_JIe_9VUI8HB5SfOfLs9mpbnfV_TvJfS4Ct-3VOXT3bgDMRRH2FBkG7GjyM83rWIJLBsK4QIaTg9oI4HeKAE5_5aNoXF6utbhIYJJWqb2X-sTbyzxSXMEeFRHpJty4RmL3GWghJS86-UenMCwk7mPFa_hjlGDjnBfU62bAJqnGVwPHqMYGeNx9ogZwlo8uvwPh_xGxuO8CWVhNZINqI5XzfNn4w59FLPHgu9yyJpyMqHmc7wvpvy0K3tiLbgWZlRQW3CoXCV1UOkUanJDxQTHTZ1rFc4uIoxjgKlTsKcOf-zFHOEekjA9c2pWzaU2IFGmEx8MkrvEmQDehVs_OoXnG93x50mPgxUKQT-C-cnYtwQgqwlO21_oiaf4NLUCQNOGS5kebLuZNGfBUgJtYWTNrOm5NOTXymOgRdLKqOtSc4yLqZJdauz5XvTuK6QNq1NNeja81YreLWpvGud5eYVjDxX9fNy05vVqm5QSIih7xTug4EASbOm8iK-74ouizwhDGCKaRUVy9GgyFfv7h5K2V1FYl3TTdZv6cwYUTl1GwpuSzkGsu65M-pcRe2Y59h_6_sUbajnj4aBvwREtccbBfm_ZSoM8xsMYfKONpgadJa75cUKgQUituodXEzSt1Gh8tQn9TifrMYxIIT5E6yVnnjMS90Fg==",
+        "summary": []
+      },
+      {
+        "id": "msg_091a4cee6847722a016aeca50aa5ac87d2a9b4900dcbbb51da",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"wind_before_kt\":13,\"wind_at_boundary_kt\":7,\"wind_direction_at_boundary_deg\":320,\"coded_ceiling_at_boundary_ft_agl\":null}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 190,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 57,
+      "output_tokens_details": {
+        "reasoning_tokens": 16
+      },
+      "total_tokens": 247
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "answer": "{\"wind_before_kt\":13,\"wind_at_boundary_kt\":7,\"wind_direction_at_boundary_deg\":320,\"coded_ceiling_at_boundary_ft_agl\":null}",
+  "parsed_json": {
+    "wind_before_kt": 13,
+    "wind_at_boundary_kt": 7,
+    "wind_direction_at_boundary_deg": 320,
+    "coded_ceiling_at_boundary_ft_agl": null
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "wind_before_kt": true,
+      "wind_at_boundary_kt": true,
+      "wind_direction_at_boundary_deg": true,
+      "coded_ceiling_at_boundary_ft_agl": true
+    }
+  },
+  "usage": {
+    "input_tokens": 190,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 57,
+    "output_tokens_details": {
+      "reasoning_tokens": 16
+    },
+    "total_tokens": 247
+  },
+  "estimated_cost_usd": 0.00475,
+  "runtime_seconds": 2.46250212501036
+}

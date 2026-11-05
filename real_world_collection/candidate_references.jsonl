@@ -1,0 +1,155 @@
+{"fields": {"air_temperature_c": 22.2}, "format": "SYNOP", "record_id": "synop_41850_202610310300_2f9194cc", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 21.5}, "format": "SYNOP", "record_id": "synop_41850_202610310000_0ae83b71", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 21.5}, "format": "SYNOP", "record_id": "synop_41850_202610301200_e401bf32", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.2}, "format": "SYNOP", "record_id": "synop_41850_202610300900_b4a39149", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.9}, "format": "SYNOP", "record_id": "synop_41850_202610300600_f97b8884", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.8}, "format": "SYNOP", "record_id": "synop_41851_202610310300_76b1bb82", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 21.9}, "format": "SYNOP", "record_id": "synop_41851_202610310000_ab8131e7", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 22.3}, "format": "SYNOP", "record_id": "synop_41851_202610301800_458b637d", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 22.5}, "format": "SYNOP", "record_id": "synop_41851_202610301500_6cd70283", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.4}, "format": "SYNOP", "record_id": "synop_41851_202610301200_6b9c5732", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 24.8}, "format": "SYNOP", "record_id": "synop_41851_202610300900_9759e20c", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.8}, "format": "SYNOP", "record_id": "synop_41851_202610300600_de23319c", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25.0}, "format": "SYNOP", "record_id": "synop_41856_202610310300_8cfb8158", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 21.4}, "format": "SYNOP", "record_id": "synop_41856_202610310000_4469e284", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.0}, "format": "SYNOP", "record_id": "synop_41856_202610301800_cee8b1c6", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.4}, "format": "SYNOP", "record_id": "synop_41856_202610301500_a49f0fec", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 24.1}, "format": "SYNOP", "record_id": "synop_41856_202610301200_640dd005", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26.7}, "format": "SYNOP", "record_id": "synop_41856_202610300900_fafe5d5f", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25.8}, "format": "SYNOP", "record_id": "synop_41856_202610300600_43ee3ff9", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25.4}, "format": "SYNOP", "record_id": "synop_41858_202610310300_fdac02ba", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.0}, "format": "SYNOP", "record_id": "synop_41858_202610310000_d2a83117", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 24.0}, "format": "SYNOP", "record_id": "synop_41858_202610301500_0cb6e6d0", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25.0}, "format": "SYNOP", "record_id": "synop_41858_202610301200_696eb76d", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25.0}, "format": "SYNOP", "record_id": "synop_41858_202610300600_9cce6f50", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26.1}, "format": "SYNOP", "record_id": "synop_41859_202610310300_793b192d", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 22.8}, "format": "SYNOP", "record_id": "synop_41859_202610310000_77eb3a92", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.0}, "format": "SYNOP", "record_id": "synop_41859_202610302100_25498113", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.5}, "format": "SYNOP", "record_id": "synop_41859_202610301800_b9e6db2d", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 24.0}, "format": "SYNOP", "record_id": "synop_41859_202610301500_b916665c", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25.0}, "format": "SYNOP", "record_id": "synop_41859_202610301200_7ab899f9", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25.6}, "format": "SYNOP", "record_id": "synop_41859_202610300900_7c01c85a", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26.9}, "format": "SYNOP", "record_id": "synop_41859_202610300600_4db487d3", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25.1}, "format": "SYNOP", "record_id": "synop_41863_202610310300_186aab30", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.0}, "format": "SYNOP", "record_id": "synop_41863_202610310000_215a790a", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23.8}, "format": "SYNOP", "record_id": "synop_41863_202610301800_e2dde53d", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 24.1}, "format": "SYNOP", "record_id": "synop_41863_202610301500_cda0d82a", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25.0}, "format": "SYNOP", "record_id": "synop_41863_202610301200_3a65ddfb", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27.5}, "format": "SYNOP", "record_id": "synop_41863_202610300900_830a39d2", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26.2}, "format": "SYNOP", "record_id": "synop_41863_202610300600_13f4f8f9", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310630_00410cf9", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_310600_d81eaff5", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 29, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_310530_0b3ecd9b", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310500_d4b06654", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 31, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_310430_10a8d8f2", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 31, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310400_db0c6609", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310330_a1cb07b0", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 29, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310300_63ca0268", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 29, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310230_99077db1", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 28, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310200_cff17d70", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310130_9556de8d", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310100_5c3d016c", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310030_c9ba6306", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_310000_bf44e01b", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_302330_8dbf3202", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_302300_7ccbc0eb", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_302230_89b20bab", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_302200_2f9afe3c", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_302130_da2423a6", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_302100_b39f5f06", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_302030_ee9f97ba", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_302000_3caf7716", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301930_a0382a5f", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301900_9f82eac1", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301830_1b2f3dc1", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301800_d280dfeb", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301730_f74be47c", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301700_0a8e6a37", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_301630_d6003653", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_301600_e8cdb082", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_301530_7e1ed827", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_301500_4ed5361e", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_301430_b5154a31", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_301400_cf7cb5a6", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301330_dda25fbb", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301300_81ae52f1", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301230_0f9bb81a", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301200_d52b685c", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 28, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_301130_13cda38a", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 28, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301100_b2120077", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 29, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_301030_98bbd0a2", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_301000_2cd19910", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_300930_1172b871", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_300900_bade155d", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGHS_300830_51be481c", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 31, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_300800_cb8c2aca", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 31, "dewpoint_c": 22}, "format": "METAR", "record_id": "metar_VGHS_300730_70e54e5e", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 31, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGHS_300700_b501b41b", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 32, "dewpoint_c": 21}, "format": "METAR", "record_id": "metar_VGHS_300630_75c852d5", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 34, "dewpoint_c": 25}, "format": "METAR", "record_id": "metar_VGEG_310600_d64582ea", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 33, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGEG_310500_358c0d86", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 32, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGEG_310400_7096342d", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 31, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGEG_310300_46a9d377", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 28, "dewpoint_c": 25}, "format": "METAR", "record_id": "metar_VGEG_310200_80a37c39", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 25}, "format": "METAR", "record_id": "metar_VGEG_310100_9185f963", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 25}, "format": "METAR", "record_id": "metar_VGEG_310000_c9d6bdc8", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 28, "dewpoint_c": 26}, "format": "METAR", "record_id": "metar_VGEG_301700_2f516b2a", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 29, "dewpoint_c": 26}, "format": "METAR", "record_id": "metar_VGEG_301600_6edb23cb", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 29, "dewpoint_c": 26}, "format": "METAR", "record_id": "metar_VGEG_301500_df59c98e", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 29, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGEG_301400_d709d358", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 29, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGEG_301300_09abac84", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGEG_301200_111012ba", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 32, "dewpoint_c": 22}, "format": "METAR", "record_id": "metar_VGEG_301100_33069488", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 33, "dewpoint_c": 21}, "format": "METAR", "record_id": "metar_VGEG_301000_76a601fd", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 35, "dewpoint_c": 20}, "format": "METAR", "record_id": "metar_VGEG_300900_17c00164", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 33, "dewpoint_c": 22}, "format": "METAR", "record_id": "metar_VGEG_300800_e7b6c355", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 33, "dewpoint_c": 22}, "format": "METAR", "record_id": "metar_VGEG_300700_53589a23", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 32, "dewpoint_c": 22}, "format": "METAR", "record_id": "metar_VGEG_300600_58ecd4cb", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 22}, "format": "METAR", "record_id": "metar_VGEG_300500_7b988cab", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 22}, "format": "METAR", "record_id": "metar_VGEG_300400_9ba890c5", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 29, "dewpoint_c": 22}, "format": "METAR", "record_id": "metar_VGEG_300300_e440861c", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 27, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGEG_300200_b54a81dc", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGEG_300100_5fc052bb", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGEG_300000_66cd7a62", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 24}, "format": "METAR", "record_id": "metar_VGEG_292300_ff5394c4", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 28, "dewpoint_c": 26}, "format": "METAR", "record_id": "metar_VGEG_291700_44f6c3af", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 28, "dewpoint_c": 26}, "format": "METAR", "record_id": "metar_VGEG_291600_eb796d1a", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 28, "dewpoint_c": 25}, "format": "METAR", "record_id": "metar_VGEG_291500_5594527e", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 29, "dewpoint_c": 25}, "format": "METAR", "record_id": "metar_VGEG_291400_ea3341be", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 26}, "format": "METAR", "record_id": "metar_VGEG_291300_244cc5bd", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 30, "dewpoint_c": 25}, "format": "METAR", "record_id": "metar_VGEG_291200_892206f8", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 31, "dewpoint_c": 23}, "format": "METAR", "record_id": "metar_VGEG_291100_21098390", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 33, "dewpoint_c": 22}, "format": "METAR", "record_id": "metar_VGEG_291000_d378199f", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 34, "dewpoint_c": 22}, "format": "METAR", "record_id": "metar_VGEG_290900_29a5e100", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 26, "dewpoint_c": 19}, "format": "METAR", "record_id": "metar_VIDP_310630_3ff6e41f", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 25, "dewpoint_c": 20}, "format": "METAR", "record_id": "metar_VIDP_310600_5e184a32", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 24, "dewpoint_c": 19}, "format": "METAR", "record_id": "metar_VIDP_310530_83c1d30d", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 23, "dewpoint_c": 19}, "format": "METAR", "record_id": "metar_VIDP_310500_3e5463c3", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 22, "dewpoint_c": 19}, "format": "METAR", "record_id": "metar_VIDP_310430_a03293c6", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 22, "dewpoint_c": 19}, "format": "METAR", "record_id": "metar_VIDP_310400_b58b1a6b", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 21, "dewpoint_c": 19}, "format": "METAR", "record_id": "metar_VIDP_310330_2ae7ee61", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 21, "dewpoint_c": 19}, "format": "METAR", "record_id": "metar_VIDP_310300_22a462e4", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 20, "dewpoint_c": 19}, "format": "METAR", "record_id": "metar_VIDP_310230_fb61325c", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 19, "dewpoint_c": 18}, "format": "METAR", "record_id": "metar_VIDP_310200_e211fa0b", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 18, "dewpoint_c": 18}, "format": "METAR", "record_id": "metar_VIDP_310130_3de5d80a", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 18, "dewpoint_c": 18}, "format": "METAR", "record_id": "metar_VIDP_310100_bcc78d2e", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 18, "dewpoint_c": 18}, "format": "METAR", "record_id": "metar_VIDP_310030_877d2b13", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 18, "dewpoint_c": 18}, "format": "METAR", "record_id": "metar_VIDP_310000_ccc95520", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 18, "dewpoint_c": 18}, "format": "METAR", "record_id": "metar_VIDP_302330_f738b18b", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 18, "dewpoint_c": 18}, "format": "METAR", "record_id": "metar_VIDP_302300_7ca14457", "status": "provisional_needs_independent_record_review"}
+{"fields": {"air_temperature_c": 18, "dewpoint_c": 18}, "format": "METAR", "record_id": "metar_VIDP_302230_367ea375", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_VIDP_310500_d74bc7b7", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_VGHS_310500_1fc211ee", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_VGEG_310500_d9c96100", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 31, "valid_to_hour": 15}, "format": "TAF", "record_id": "taf_VIJP_310500_85b52b75", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_OMDB_310500_b7117fb4", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_EGLL_310459_04e43419", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_LFPG_310500_bf997582", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_RJTT_310542_4787a9d5", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_KJFK_310525_f0e28f69", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_RJAA_310505_7dae16bb", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_KLAX_310528_60b8ae24", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_EDDF_310500_6de0a360", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_LTFM_310440_44456885", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 6, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_RKSI_310500_8cd47cb0", "status": "provisional_needs_independent_record_review"}
+{"fields": {"valid_from_day": 31, "valid_from_hour": 7, "valid_to_day": 1, "valid_to_hour": 12}, "format": "TAF", "record_id": "taf_WSSS_310700_89a664b7", "status": "provisional_needs_independent_record_review"}

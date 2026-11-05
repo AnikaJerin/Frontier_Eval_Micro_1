@@ -1,0 +1,144 @@
+{
+  "task": "RM07",
+  "model": "gpt-5.4",
+  "trial": 3,
+  "utc": "2026-11-05T15:46:11.143677+00:00",
+  "request": {
+    "model": "gpt-5.4",
+    "input": "Decode the following user-provided METAR report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nMETAR VIDP 310100Z VRB02KT 0800 R28/P2000 R27/1800 R29R/1700 R29L/1900 MIFG NSC 18/18 Q1018 NOSIG\n\nReturn wind_direction_deg as null when variable, wind_speed_kt, prevailing_visibility_m, r27_rvr_m and r29r_rvr_m.",
+    "max_output_tokens": 2048,
+    "store": false
+  },
+  "response": {
+    "id": "resp_0836923bab8b4d0f016aeca4d7975087d29460cddc21cf2db5",
+    "object": "response",
+    "created_at": 1793893591,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1793893592,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "image": {
+      "context_compression": "disabled"
+    },
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 2048,
+    "max_tool_calls": null,
+    "model": "gpt-5.4-2026-03-05",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0836923bab8b4d0f016aeca4d8553c87d28a6f4492fefac555",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"wind_direction_deg\":null,\"wind_speed_kt\":2,\"prevailing_visibility_m\":800,\"r27_rvr_m\":1800,\"r29r_rvr_m\":1700}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 178,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 44,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 222
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "answer": "{\"wind_direction_deg\":null,\"wind_speed_kt\":2,\"prevailing_visibility_m\":800,\"r27_rvr_m\":1800,\"r29r_rvr_m\":1700}",
+  "parsed_json": {
+    "wind_direction_deg": null,
+    "wind_speed_kt": 2,
+    "prevailing_visibility_m": 800,
+    "r27_rvr_m": 1800,
+    "r29r_rvr_m": 1700
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "wind_direction_deg": true,
+      "wind_speed_kt": true,
+      "prevailing_visibility_m": true,
+      "r27_rvr_m": true,
+      "r29r_rvr_m": true
+    }
+  },
+  "usage": {
+    "input_tokens": 178,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 44,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 222
+  },
+  "estimated_cost_usd": 0.001105,
+  "runtime_seconds": 2.0951098749937955
+}

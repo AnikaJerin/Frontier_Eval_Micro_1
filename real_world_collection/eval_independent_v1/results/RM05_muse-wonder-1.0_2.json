@@ -1,0 +1,76 @@
+{
+  "task": "RM05",
+  "model": "muse-wonder-1.0",
+  "trial": 2,
+  "utc": "2026-11-05T15:46:03.850602+00:00",
+  "request": {
+    "model": "muse-wonder-1.0",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Decode the following user-provided METAR report for a controlled quality-assurance exercise. Return only one JSON object with exactly the requested keys, using JSON numbers, booleans, strings and null as appropriate. For SYNOP, sections change at 333; temperatures are degrees C and section 3 58/59 pressure changes and 7-group rainfall use tenths. Do not invent missing values or claim independent verification of the station observation.\n\nMETAR VIDP 310300Z 23005KT 1800 R28/P2000 R27/P2000 R29R/P2000 R29L/P2000 BR NSC 21/19 Q1020 NOSIG\n\nDecode prevailing_visibility_m. For R28/P2000 return r28_reported_limit_m and r28_greater_than_limit as boolean; do not substitute runway range for visibility."
+      }
+    ],
+    "reasoning_effort": "minimal",
+    "max_tokens": 2048
+  },
+  "response": {
+    "id": "chatcmpl-01a1ac63-d457-779a-ad09-6d1dd26abcb4",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "{\"prevailing_visibility_m\": 1800, \"r28_reported_limit_m\": 2000, \"r28_greater_than_limit\": true}",
+          "refusal": null,
+          "role": "assistant"
+        },
+        "logprobs": null
+      }
+    ],
+    "created": 1793893585,
+    "model": "muse-wonder-1.0",
+    "service_tier": "default",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 135,
+      "prompt_tokens": 182,
+      "total_tokens": 317,
+      "completion_tokens_details": {
+        "reasoning_tokens": 93
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 102
+      }
+    }
+  },
+  "answer": "{\"prevailing_visibility_m\": 1800, \"r28_reported_limit_m\": 2000, \"r28_greater_than_limit\": true}",
+  "parsed_json": {
+    "prevailing_visibility_m": 1800,
+    "r28_reported_limit_m": 2000,
+    "r28_greater_than_limit": true
+  },
+  "status": "completed",
+  "grade": {
+    "passed": true,
+    "score": 1.0,
+    "fields": {
+      "prevailing_visibility_m": true,
+      "r28_reported_limit_m": true,
+      "r28_greater_than_limit": true
+    }
+  },
+  "usage": {
+    "completion_tokens": 135,
+    "prompt_tokens": 182,
+    "total_tokens": 317,
+    "completion_tokens_details": {
+      "reasoning_tokens": 93
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 102
+    }
+  },
+  "estimated_cost_usd": 0.0030404,
+  "runtime_seconds": 1.5451202919939533
+}

@@ -1,0 +1,10 @@
+{
+  "status": "pre-inference freeze; no model calls made",
+  "source_sha256": "0d7219c2750ce1694fe9d59dbc1a0f799dd10eb95f91b0dd9462e6026e25863f",
+  "sha256": {
+    "E01.json": "cd9fdca8b238a56d76eb074fecf36696f25ada6a8b0c95df193acd654fe63eb9",
+    "E02.json": "cdc910d0c87288a7ac0d989e2dbd01c7cea72e6b8dffaef49fb992b9ed2ae3f0",
+    "E03.json": "021f3cfaec9acb8f88534bc7c209b88b5be46dbe554a4c7896a10b55d879e9df",
+    "grader.py": "64a609d02bc0d823fadbcb000781ccf7247f15fc3fa08bbc5e4a63ae1c85c6f0"
+  }
+}

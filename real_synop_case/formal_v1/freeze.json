@@ -1,0 +1,12 @@
+{
+  "status": "frozen before formal inference",
+  "sha256": {
+    "real_synop_case/formal_v1/report.txt": "ab5e96fc44307820a23eb6b2d0f13ec03df4f61da92442d093cdb1b021a3e45b",
+    "real_synop_case/formal_v1/reference.json": "05c612baddaf440fb4dab33737cd0a7b75b567230430e4c6b2546977504902dc",
+    "real_synop_case/formal_v1/prompt.txt": "8c3228cbf44f05debf8319b2f553f302041a4b3269e88e1b77ee73f3f9bb0492",
+    "real_synop_case/formal_v1/REFERENCE_AUDIT.md": "66a058b69358ae57bce54064f51e8ca5576cd450a3cc1e4918c48c508828140c",
+    "real_synop_case/formal_v1/verify.py": "6dbf15b974b745e5a3ba4531d9d16e5e08fff48a170fe2a9a7083f0b1c260de0",
+    "real_synop_case/formal_v1/run.py": "d9d761b2a1b40464034a93a2de0b9211811d1400be530847d3e79f6e9abfefbb",
+    "grader.py": "15a71c2f841815871c08c823c6128111527b8be1744a7ee148f50194807aa089"
+  }
+}

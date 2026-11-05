@@ -1,0 +1,11 @@
+{
+  "id": "synop_trend",
+  "model_visible_prompt": "Return only one JSON object with exactly the requested keys; numbers must be JSON numbers, null where requested; no prose or Markdown. Numeric tolerance is 0.000001.\nSYNOP section 1 excerpt: 11025 21048 49987 52018; section 3: 333 10050 21090. The 5appp group indicates pressure rose 1.8 hPa over the preceding three hours. Assume pressure 900\u20131099.9 hPa. Return current_temperature_c, current_dewpoint_c, current_msl_pressure_hpa, msl_pressure_three_hours_ago_hpa, temperature_dewpoint_spread_c. Section 3 is not current conditions.",
+  "reference": {
+    "current_temperature_c": -2.5,
+    "current_dewpoint_c": -4.8,
+    "current_msl_pressure_hpa": 998.7,
+    "msl_pressure_three_hours_ago_hpa": 996.9,
+    "temperature_dewpoint_spread_c": 2.3
+  }
+}
